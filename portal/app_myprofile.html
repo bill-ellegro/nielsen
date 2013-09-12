@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>profile page</title>
+  
+  <!-- Included CSS Files (Uncompressed) -->
+  <!--
+  <link rel="stylesheet" href="stylesheets/foundation.css">
+  -->
+  
+  <!-- Included CSS Files (Compressed) -->
+  <link rel="stylesheet" href="stylesheets/foundation.min.css">
+
+  <!-- FONTS + APP CSS -->
+  <link href="stylesheets/ui-lightness/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" type="text/css" href="stylesheets/MyFontsWebfontsKit.css"> -->
+  <link rel="stylesheet" href="stylesheets/elsmaster.css">
+  <!-- ELS Plugins -->
+  <link rel="stylesheet" href="stylesheets/els_modal.css">
+  <link rel="stylesheet" href="stylesheets/program-stack.css">
+
+  <!-- Page CSS -->
+  <link rel="stylesheet" href="stylesheets/myprofile.css">
+  
+  <!-- App CSS -->
+  <link rel="stylesheet" href="stylesheets/app.css">
+
+  <script src="javascripts/modernizr.foundation.js"></script>
+</head>
+<body>
+
+  <div class="row headerrow">
+    <div class="twelve columns">
+      <div class="headline"><span class="neilsenlogo"><img src="images/nielsen_logo.png"></span>MY LEARNING NETWORK</div>
+    </div>
+  </div>
+  <div class="row navrow">
+    <div class="twelve columns">
+      <a class="navtitles" href="app_homepage.html">HOME</a>
+      <a class="navtitles" href="app_learningopportunities.html">LEARNING OPPORTUNITIES</a>
+      <a class="navtitles active" href="app_myprofile.html">MY PROFILE</a>
+      <a class="navtitles" href="#">DISCUSSIONS</a>   
+    </div>
+  </div>
+  <div class="row welcomerow">
+    <div class="twelve columns mobile-four">
+      <div class="welcometitle">
+        <span id="welcomeid">WELCOME ANDREW</span><span style="margin:0px 23px;">|</span><span id="profileid">YOUR PROFILE</span>
+        <div class="profilemeter">
+          <div class="welcomeprofile">
+            <div id="profilepercent2" style="width:54%">54%</div>
+          </div>
+        </div>
+        <span style="margin:0px 23px;">|</span>
+        <div class="searchcontainer">
+          <input type="text" placeholder="search" style="display:inline; width:160px; font-size:12px; height:18px; margin:0px; padding:0px 2px; background-color:#000; color:#f1f1f1; text-transform:uppercase; background: url('images/search.png') no-repeat right;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row profiledashview" id="ProfileSummaryView">
+    <div class="twelve columns">
+      <div class="row">
+        <div class="four columns">
+          <span class="pagetitle">YOUR PROFILE</span>
+        </div>
+        <div class="eight columns" align="right">
+          <div class="primaryButton fluid profileUpdateBtn">Update Profile</div>&nbsp;&nbsp;<div class="primaryButton fluid personalizationBtn">Personalization Settings</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="six columns">
+          <div class="profile">
+            flash widget goes here
+            <div class="profilefooter currentlearning">
+              Current Learning
+            </div>
+          </div>
+        </div>
+        <div class="six columns">
+          <div class="profile">
+            <img src="images/coming-soon.gif">
+            <div class="profilefooter notificationcenter">
+              Notification Center
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="six columns">
+          <div class="profile">
+            <img src="images/coming-soon.gif">
+            <div class="profilefooter engagement">
+              Engagement
+            </div>
+          </div>
+        </div>
+        <div class="six columns">
+          <div class="profile">
+            <span class="profilecardtitle">Completed this year: <span id="historytitlecompleted">7</span>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;Total: <span id="historytitletotal">22</span></span>
+            <div class="six columns historycard lefthalf" id="dashcompleted1">
+              <img class="historyimg" src="blah2"><span class="historytitlesmall">Content Type One: 12</span>
+            </div>
+            <div class="six columns historycard righthalf" id="dashcompleted2">
+              <img class="historyimg" src="blah2"><span class="historytitlesmall">Content Type One: 12</span>
+            </div>
+            <div class="six columns historycard lefthalf" id="dashcompleted3">
+              <img class="historyimg" src="blah2"><span class="historytitlesmall">Content Type One: 12</span>
+            </div>
+            <div class="six columns historycard righthalf" id="dashcompleted4">
+              <img class="historyimg" src="blah2"><span class="historytitlesmall">Content Type One: 12</span>
+            </div>
+            <div class="six columns historycard lefthalf" id="dashcompleted5">
+              <img class="historyimg" src="blah2"><span class="historytitlesmall">Content Type One: 12</span>
+            </div>
+            <div class="six columns historycard righthalf" id="dashcompleted6">
+              <img class="historyimg" src="blah2"><span class="historytitlesmall">Content Type One: 12</span>
+            </div>
+            <div class="profilefooter learninghistory">
+              Learning History
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row profiledashview" id="TagSummaryView">
+    <div class="twelve columns">
+      <div class="row">
+        <div class="four columns">
+          <span class="pagetitle">PROFILE BUILDER</span><br/>
+        </div>
+        <div class="eight columns" align="right">
+          <div class="primaryButton fluid profileDashBtn">Return</div>&nbsp;&nbsp;<div class="primaryButton fluid personalizationBtn">Personalization Settings</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="one columns"></div>
+        <div class="five columns">
+          <div class="profile">
+            <div class="row">
+                <br/><br/><br/><br/>
+                <div class="two columns padded">
+                  <img src="blah">
+                </div>
+                <div class="ten columns padded">
+                  <span class="dashlabel" id="dashskillslabel_total">bla adhoasdijf aiojasd oias doij aso asdf asdfo</span>
+                </div>
+                <br/><br/><br/><br/>
+                <div class="two columns padded">
+                  <img src="blah">
+                </div>
+                <div class="ten columns padded">
+                  <span class="dashlabel" id="dashskillslabel_lastupdated">bla adhoasdijf aiojasd oias doij aso asdf asdfo</span>
+                </div>                
+            </div>
+            <div class="profilefooter dashskills">
+              SKILLS
+            </div>
+          </div>
+        </div>
+        <div class="five columns">
+          <div class="profile">
+            <div class="row">
+                <br/><br/><br/><br/>
+                <div class="two columns padded">
+                  <img src="blah">
+                </div>
+                <div class="ten columns padded">
+                  <span class="dashlabel" id="dashaspireslabel_total">bla adhoasdijf aiojasd oias doij aso asdf asdfo</span>
+                </div>
+                <br/><br/><br/><br/>
+                <div class="two columns padded">
+                  <img src="blah">
+                </div>
+                <div class="ten columns padded">
+                  <span class="dashlabel" id="dashaspireslabel_lastupdated">bla adhoasdijf aiojasd oias doij aso asdf asdfo</span>
+                </div>                
+            </div>
+            <div class="profilefooter dashaspirations">
+              ASPIRATIONS
+            </div>
+          </div>
+        </div>
+        <div class="one columns"></div>
+      </div>
+      <div class="row">
+        <div class="one columns"></div>
+        <div class="five columns">
+          <div class="profile">
+            <div class="row">
+                <br/><br/><br/><br/>
+                <div class="two columns padded">
+                  <img src="blah">
+                </div>
+                <div class="ten columns padded">
+                  <span class="dashlabel" id="dashrespslabel_total">bla adhoasdijf aiojasd oias doij aso asdf asdfo</span>
+                </div>
+                <br/><br/><br/><br/>
+                <div class="two columns padded">
+                  <img src="blah">
+                </div>
+                <div class="ten columns padded">
+                  <span class="dashlabel" id="dashrespslabel_lastupdated">bla adhoasdijf aiojasd oias doij aso asdf asdfo</span>
+                </div>                
+            </div>
+            <div class="profilefooter dashresponsibilities">
+              RESPONSIBILITIES
+            </div>
+          </div>
+        </div>
+        <div class="five columns">
+          <div class="profile">
+            <div class="row">
+                <br/><br/><br/><br/>
+                <div class="two columns padded">
+                  <img src="blah">
+                </div>
+                <div class="ten columns padded">
+                  <span class="dashlabel" id="dashdetails_total">bla adhoasdijf aiojasd oias doij aso asdf asdfo</span>
+                </div>
+                <br/><br/><br/><br/>
+                <div class="two columns padded">
+                  <img src="blah">
+                </div>
+                <div class="ten columns padded">
+                  <span class="dashlabel" id="dashdetails_lastupdated">bla adhoasdijf aiojasd oias doij aso asdf asdfo</span>
+                </div>                
+            </div>
+            <div class="profilefooter dashdetails">
+              PERSONAL DETAILS
+            </div>
+          </div>
+        </div>
+        <div class="one columns"></div>
+      </div>
+    </div>
+  </div>
+  <div class="profiledashview" id="LearningHistorySummaryView">
+    <div class="row title-row">
+      <div class="four columns viewcontainer">
+        <h1>Learning History (<span id="countLearningHistory">7</span>)</h1>
+      </div>  <!-- /.four.columns.viewcontainer -->
+    </div>  <!-- /.row.title-row -->
+
+    <div class="row content-row">
+      <div class="twelve columns">
+        <div class="history-grid" id="learninghistorylist">
+          <div class="item cf">
+            <div class="status">
+              <div class="arrow back"></div>
+              <div class="arrow front"></div>
+              <p class="completed">Completed 11/11/11</p>
+            </div>  <!-- /.status -->
+
+            <div class="title-description">
+              <h2>Title One</h2>
+              <p>Aliquam sit amet vestibulum augue. Morbi scelerisque, ante in pretium dictum, purus felis mattis velit, non fermentum libero erat eu massa. Nulla vitae volutpat risus. Caras congue ligula eu nisi sagittis, sit amet lacinia purus varius. Sed placerat, massa sed placerat.</p>
+            </div>  <!-- /.title-description -->
+
+            <div class="actions">
+              <p class="ratings"><a href="#">Ratings</a></p>
+              <p class="discussions"><a href="#">Discussions</a></p>
+            </div>  <!-- /.actions -->
+          </div>  <!-- /.item -->
+
+          <div class="item cf">
+            <div class="status">
+              <div class="arrow back"></div>
+              <div class="arrow front"></div>
+              <p class="completed">Completed 11/11/11</p>
+            </div>  <!-- /.status -->
+
+            <div class="title-description">
+              <h2>Title One</h2>
+              <p>Aliquam sit amet vestibulum augue. Morbi scelerisque, ante in pretium dictum, purus felis mattis velit, non fermentum libero erat eu massa. Nulla vitae volutpat risus. Caras congue ligula eu nisi sagittis, sit amet lacinia purus varius. Sed placerat, massa sed placerat.</p>
+            </div>  <!-- /.title-description -->
+
+            <div class="actions">
+              <p class="ratings"><a href="#">Ratings</a></p>
+              <p class="discussions"><a href="#">Discussions</a></p>
+            </div>  <!-- /.actions -->
+          </div>  <!-- /.item -->
+        </div>  <!-- /.history-grid -->
+      </div>  <!-- /.twelve.columns -->
+    </div>
+  </div>
+  <div class="profiledashview" id="CurrentLearningSummaryView">
+    <div class="row title-row">
+      <div class="four columns container-title">
+        <h1>Current Learning (<span id="countCurrentLearning">7</span>)</h1>
+      </div>  <!-- /.four.columns.viewcontainer -->
+
+      <div class="eight columns container-actions">
+        <h2>Progress</h2>
+        <div class="profilemeter">
+          <div class="welcomeprofile">
+            <div id="profilepercent" style="width:54%">54%</div>
+          </div>  <!-- /.welcomeprofile -->
+        </div>  <!-- /.profilemeter -->
+      </div>  <!-- /.viewcontainer -->
+    </div>  <!-- /.row.title-row -->
+
+    <div class="row content-row">
+      <div id="cardscontainer">
+        <div class="three columns" id="programcolumn1">
+        </div>
+        <div class="three columns" id="programcolumn2">
+        </div>
+        <div class="three columns" id="programcolumn3">
+        </div>
+        <div class="three columns" id="programcolumn4">
+        </div>
+        <!-- We cycle through program columns to flow fill with programs as we get them in the list! -->
+      </div>
+
+    </div>
+  </div>
+
+  <div class="row footerrow">
+    <div class="twelve columns">
+      footer row
+    </div>
+  </div>
+
+  <div class="ellegroModal">
+    <div id="detailModal" class="row">
+      <div class="closeReveal" onclick="getRevealModal()">X</div>
+      <div class="twelve columns">
+        <div id="profile1" class="profileview">
+		      <span class="formtitle">Your Details</span>
+          <div class="row">
+            <div class="six columns padded">
+              <span class="formlabel">Name</span>
+              <input id="profiledetails_name" type="text" readonly>
+            </div>
+            <div class="six columns padded">
+              <span class="formlabel">Your Manager</span>
+              <input id="profiledetails_manager" type="text" readonly>
+            </div>
+          </div>
+          <div class="row">
+            <div class="six columns padded">
+              <span class="formlabel">Job Title</span>
+              <input id="profiledetails_jobtitle" type="text" readonly>
+            </div>
+            <div class="six columns padded">
+              <span class="formlabel">Your Location</span>
+              <input id="profiledetails_location" type="text" readonly>
+            </div>
+          </div>
+		      <hr/>
+          <span class="formtitle">Additional Details About You</span>
+          <div class="row">
+            <div class="four columns padded">
+              <span class="formlabel">Job Function</span>
+              <input id="profiledetails_jobfunction" type="text">
+            </div>
+            <div class="four columns padded">
+              <span class="formlabel">Alternate Location</span>
+              <input id="profiledetails_altlocation" type="text">
+            </div>
+            <div class="four columns padded">
+              <span class="formlabel">Remote Worker</span>
+              place yes/no widget here!
+            </div>
+          </div>
+          <div class="row">
+            <div class="six columns padded">
+              <span class="formlabel">Dotted Line Managers</span>
+              TURNED OFF FOR PHASE 1
+            </div>
+            <div class="six columns padded">
+            </div>
+          </div>
+          <div class="row" align="right">
+            <div class="twelve columns" align="right">
+              <a>Skip &gt;</a>&nbsp;<div class="primaryButton" onclick="gotoProfileView(2);">Next</div>
+            </div>
+          </div>
+		    </div>
+      </div>
+      <div id="profile2" class="profileview">
+          <span class="formtitle">Skills</span>
+          <div class="row">
+            <div class="five columns padded">
+              <div class="tagCard">
+                <div class="tagCardDetails" id="skills_globallist">
+                  <div id="tag1" class="tagCopy"><span>Tag Label One</span></div>
+                </div> <!-- /tagCardDetails -->
+              </div> <!-- /tagCard -->
+            </div>
+            <div class="one column">
+              <div class="arrowInd"></div>
+            </div>
+            <div class="six columns padded taglist" id="skills_tagmylist">
+              <div id="tag1" class="detailedtag" data-tagid="">
+                <div class="deletebutton"><img src="images/redx.png"></div><div class="taglabel">Tag Label One</div><br/>
+                <div class="tagradios">
+                  <input type="radio" name="radiotag3" value="1">
+                  <input type="radio" name="radiotag3" value="2">
+                  <input type="radio" name="radiotag3" value="3">
+                  <input type="radio" name="radiotag3" value="4">
+                  <input type="radio" name="radiotag3" value="5"><br/>
+                  Low<span style="margin-right:215px">&nbsp;</span>High
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="eight columns" align="left">
+              <div class="primaryButton" onclick="saveProfile();">Save</div>
+            </div>
+            <div class="four columns" align="right">
+              <a>Skip &gt;</a>&nbsp;<div class="primaryButton" onclick="gotoProfileView(3);">Next</div>
+            </div>
+          </div>
+        </div>
+        <div id="profile3" class="profileview">
+          <span class="formtitle">Responsibilities</span>
+          <div class="row">
+            <div class="five columns padded">
+              <div class="tagCard">
+                <div class="tagCardDetails" id="respss_globallist">
+                  <div id="tag1" class="tagCopy"><span>Tag Label One</span></div>
+                </div> <!-- /tagCardDetails -->
+              </div> <!-- /tagCard -->
+            </div>
+            <div class="one column">
+              <div class="arrowInd"></div>
+            </div>
+            <div class="six columns padded taglist" id="resps_tagmylist">
+              <div id="tag1" class="detailedtag" data-tagid="">
+                <div class="deletebutton"><img src="images/redx.png"></div><div class="taglabel">Tag Label One</div><br/>
+                <div class="tagradios">
+                  <input type="radio" name="radiotag3" value="1">
+                  <input type="radio" name="radiotag3" value="2">
+                  <input type="radio" name="radiotag3" value="3">
+                  <input type="radio" name="radiotag3" value="4">
+                  <input type="radio" name="radiotag3" value="5"><br/>
+                  Low<span style="margin-right:215px">&nbsp;</span>High
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="eight columns" align="left">
+              <div class="primaryButton" onclick="saveProfile();">Save</div>
+            </div>
+            <div class="four columns" align="right">
+              <a>Skip &gt;</a>&nbsp;<div class="primaryButton" onclick="gotoProfileView(4);">Next</div>
+            </div>
+          </div>
+        </div>
+        <div id="profile4" class="profileview">
+          <span class="formtitle">Aspirations</span>
+          <div class="row">
+            <div class="five columns padded">
+              <div class="tagCard">
+                <div class="tagCardDetails" id="aspires_globallist">
+                  <div id="tag1" class="tagCopy"><span>Tag Label One</span></div>
+                </div> <!-- /tagCardDetails -->
+              </div> <!-- /tagCard -->
+            </div>
+            <div class="one column">
+              <div class="arrowInd"></div>
+            </div>
+            <div class="six columns padded taglist" id="aspires_tagmylist">
+              <div id="tag1" class="detailedtag" data-tagid="">
+                <div class="deletebutton"><img src="images/redx.png"></div><div class="taglabel">Tag Label One</div><br/>
+                <div class="tagradios">
+                  <input type="radio" name="radiotag3" value="1">
+                  <input type="radio" name="radiotag3" value="2">
+                  <input type="radio" name="radiotag3" value="3">
+                  <input type="radio" name="radiotag3" value="4">
+                  <input type="radio" name="radiotag3" value="5"><br/>
+                  Low<span style="margin-right:215px">&nbsp;</span>High
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="eight columns" align="left">
+              <div class="primaryButton" onclick="saveProfile();">Save</div>
+            </div>
+            <div class="four columns" align="right">
+              <a>Skip &gt;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  
+  
+  <!-- Included JS Files (Uncompressed) -->
+  <!--
+  <script src="javascripts/jquery.js"></script>
+  <script src="javascripts/jquery.foundation.mediaQueryToggle.js"></script>
+  <script src="javascripts/jquery.foundation.forms.js"></script>
+  <script src="javascripts/jquery.event.move.js"></script>
+  <script src="javascripts/jquery.event.swipe.js"></script>
+  <script src="javascripts/jquery.foundation.reveal.js"></script>
+  <script src="javascripts/jquery.foundation.orbit.js"></script>
+  <script src="javascripts/jquery.foundation.navigation.js"></script>
+  <script src="javascripts/jquery.foundation.tabs.js"></script>
+  <script src="javascripts/jquery.foundation.topbar.js"></script>
+  <script src="javascripts/jquery.foundation.joyride.js"></script>
+  <script src="javascripts/jquery.foundation.clearing.js"></script>
+  <script src="javascripts/jquery.foundation.magellan.js"></script>
+  
+  -->
+  
+  <!-- Included JS Files (Compressed) -->
+  <script src="javascripts/foundation.min.js"></script>
+  <script src="javascripts/jquery-1.9.1.js"></script>
+  <script src="javascripts/jquery-ui-1.10.3.custom.js"></script>
+  
+  <!-- Initialize JS Plugins -->
+  <script src="javascripts/iqapi.js"></script>
+  
+  <script src="javascripts/taglibrary.js"></script>
+  <script src="javascripts/app.js"></script>
+
+    <script type="text/javascript">
+      /* GLOBAL VARS */
+      var _gCompletedVerb = "completed";
+      var _gStartedVerb = "started";
+      var _gDefaultTagThreshold = 1;
+      /* SESSION VARS COMING FROM THE SSO!!! */
+      var CURRENT_PERSONID = "niraj.swami@ellegrolearning.com";
+      CURRENT_PERSONID=prompt("Provide email address:\n","niraj.swami@ellegrolearning.com");
+      if (CURRENT_PERSONID==null || CURRENT_PERSONID==""){
+        CURRENT_PERSONID = "niraj.swami@ellegrolearning.com";
+      }
+      
+    </script>
+
+    <script type="text/javascript">
+      /* PAGE CONTENT HASH HOLDERS */
+      var COMPLETED_ARR = new Array();
+      var COMPLETED_LOG_HASH = new Array();
+      var INPROGRESS_ARR = new Array();
+      ///
+      /// our tag arrays
+      var skills_tags_global = new Array(0);
+      var skills_tags_list = new Array(0);
+      var resps_tags_global = new Array(0);
+      var resps_tags_list = new Array(0);
+      var aspires_tags_global = new Array(0);
+      var aspires_tags_list  = new Array(0);
+      ////
+
+    </script>
+
+  
+    <script>
+    $(window).load(function(){
+      // EVENT HANDLERS
+      $('.learninghistory').click(function(event) {
+        showSummaryView("LearningHistorySummaryView");
+      });
+
+      $('.currentlearning').click(function(event) {
+        showSummaryView("CurrentLearningSummaryView");
+      });
+      $('.profileUpdateBtn').click(function(event) {
+        showSummaryView("TagSummaryView");
+      });
+      $('.profileDashBtn').click(function(event) {
+        showSummaryView("ProfileSummaryView");
+      });
+      //
+      $('.dashskills').click(function(event) {
+        gotoProfileView(2);
+        getRevealModal();
+      });
+      $('.dashresponsibilities').click(function(event) {
+        gotoProfileView(3);
+        getRevealModal();
+      });
+      $('.dashaspirations').click(function(event) {
+        gotoProfileView(4);
+        getRevealModal();
+      });
+      $('.dashdetails').click(function(event) {
+        gotoProfileView(1);
+        getRevealModal();
+      });
+      //////////////////////
+      // display stuff
+      showSummaryView('ProfileSummaryView');
+      ////////////////////////////
+
+      //////// download My data (including activity log for these type of things)
+      // populate tags
+      IQ_GetPersonIQProfile(CURRENT_PERSONID, function(json){
+        // we must populate the arrays
+        skills_tags_list = new Array();
+        resps_tags_list = new Array();
+        aspires_tags_list = new Array();
+        //
+        var metas_arr = json.metas;
+        //
+        for (var i = 0;i<metas_arr.length;i++){
+          var currMeta = metas_arr[i];
+          if (currMeta.tagtype == "skill"){
+            skills_tags_list.push({tagLabel:currMeta.tag, tagValue:currMeta.thresholdvalue, molecule:currMeta});
+          }
+          if (currMeta.tagtype == "responsibility"){
+            resps_tags_list.push({tagLabel:currMeta.tag, tagValue:currMeta.thresholdvalue, molecule:currMeta});
+          }
+          if (currMeta.tagtype == "aspiration"){
+            aspires_tags_list.push({tagLabel:currMeta.tag, tagValue:currMeta.thresholdvalue, molecule:currMeta});
+          }
+        }
+        //
+        populateAllTags();
+      });
+      
+      //
+      //
+      
+      //
+      IQ_GetContentBasicsForUserAndVerb(CURRENT_PERSONID, _gCompletedVerb, function(json){
+        COMPLETED_ARR = new Array();
+        var contentArr = json.content;
+        COMPLETED_ARR = contentArr;
+        $('#historytitlecompleted').html(contentArr.length);
+        $('#countLearningHistory').html(contentArr.length);
+        $('.historycard').hide();
+        for (var i = 1;i<=Math.min(contentArr.length, 6); i++){
+          var currContent = contentArr[i-1];
+          $('#dashcompleted'+i+' > span').html(currContent.contenttitle);
+          $('#dashcompleted'+i).fadeIn(250);
+        }
+        //
+        IQ_GetContentLogForUserAndVerb(CURRENT_PERSONID, _gCompletedVerb, function(json2){
+          COMPLETED_LOG_HASH = new Array();
+          var contentArr2 = json2.subjectlog;
+          for (var i = 0;i< contentArr2.length ; i++){
+            var currLog = contentArr2[i];
+            ///
+            COMPLETED_LOG_HASH[currLog.object] = currLog;
+            //
+          }
+          //
+          // populate details
+          //////////////////////////////
+          var itemsHTML = '';
+          for (var i=0;i<COMPLETED_ARR.length;i++){
+            //
+            var currContObj = COMPLETED_ARR[i];
+            //
+            var itemHTML =  '<div class="item cf">';
+            itemHTML    +=  ' <div class="status">';
+            itemHTML    +=  '   <div class="arrow back"></div>';
+            itemHTML    +=  '   <div class="arrow front"></div>';
+            itemHTML    +=  '   <p class="completed">Completed '+COMPLETED_LOG_HASH[currContObj.contentid].timestamp+'</p>';
+            itemHTML    +=  ' </div>  <!-- /.status -->';
+            itemHTML    +=  ' <div class="title-description">';
+            itemHTML    +=  '   <h2>'+currContObj.contenttitle+'</h2>';
+            itemHTML    +=  '   <p>'+"VALIDATED DESCRIPTION FROM DETAILS JSON HERE"+'</p>';
+            itemHTML    +=  ' </div>  <!-- /.title-description -->';
+
+            itemHTML    +=  ' <div class="actions">';
+            itemHTML    +=  '   <p class="ratings"><a href="#">Ratings</a></p>';
+            itemHTML    +=  '   <p class="discussions"><a href="#">Discussions</a></p>';
+            itemHTML    +=  ' </div>  <!-- /.actions -->';
+            itemHTML    +=  '</div>';
+            ////////
+            itemsHTML += itemHTML;
+          }
+          $('#learninghistorylist').html(itemsHTML);
+          //////////////////////////////
+        });
+        //////////////
+        //// CURRENT LEARNING /////
+        IQ_GetContentBasicsForUserAndVerbExceptVerb2(CURRENT_PERSONID, _gStartedVerb, _gCompletedVerb, function(json){
+          /////
+          INPROGRESS_ARR = new Array();
+          INPROGRESS_ARR = json.content;
+          //
+          var perc = Math.round(COMPLETED_ARR.length/(COMPLETED_ARR.length+INPROGRESS_ARR.length)*100);
+          $('#profilepercent').css("width",perc+"%");
+          $('#profilepercent').html(perc+"%");
+          $('#countCurrentLearning').html(INPROGRESS_ARR.length);
+          //
+          var dispColumnIndex = 1; // cycles through 1-4 for every addition
+          for (var i=0;i<INPROGRESS_ARR.length;i++){
+            var currContentObj = INPROGRESS_ARR[i];
+            // now we must drop details
+            var itemHTML = '';
+            itemHTML += '<div class="programstack cf">';
+            itemHTML += ' <div class="alert"></div>';
+
+            itemHTML += ' <div class="row title-row">';
+            itemHTML += '   <div class="twelve columns">';
+            itemHTML += '     <h2>'+currContentObj.contenttitle+'</h2>';
+            itemHTML += '   </div>  <!-- /.twelve.columns -->';
+            itemHTML += ' </div>  <!-- /.row.title-row -->';
+
+            itemHTML += ' <div class="row content-row">';
+            itemHTML += '   <div class="twelve columns">';
+            itemHTML += '     <p>'+("Validated Description From The Details Json Goes Here Validated Description From The Details Json Goes Here Validated Description From The Details Json Goes Here Validated Description From The Details Json Goes Here Validated Description From The Details Json Goes Here Validated Description From The Details Json Goes Here Validated Description From The Details Json Goes Here Validated Description From The Details Json Goes Here ").substring(0,30+Math.round(Math.random()*400))+'</p>';
+            itemHTML += '   </div>  <!-- /.twelve.columns -->';
+            itemHTML += ' </div>  <!-- /.row.content-row -->';
+
+            itemHTML += ' <div class="row actions-row">';
+            
+            itemHTML += '   <div class="six columns">';
+            itemHTML += '     <div class="icon-link num-content"><a href="#">Lorem ips descript</a></div>';
+            itemHTML += '   </div>  <!-- /.six.columns -->';
+
+            itemHTML += '   <div class="six columns">';
+            itemHTML += '     <div class="icon-link updates"><a href="#">Lorem ips descript</a></div>';
+            itemHTML += '   </div>  <!-- /.six.columns -->';
+            
+            itemHTML += ' </div>  <!-- /.row.actions-row -->';
+
+            itemHTML += ' <div class="row more-details-row">';
+            itemHTML += '   <div class="twelve columns">';
+            itemHTML += '     <p><a>More Details &gt;</a></p>';
+            itemHTML += '   </div>  <!-- /.twelve.columns -->';
+            itemHTML += ' </div>  <!-- /.row.more-details-row -->';
+            itemHTML += '</div>  <!-- /.programstack.cf -->';
+            //
+
+            //
+            $('#programcolumn'+dispColumnIndex).append(itemHTML);
+            //
+            dispColumnIndex++;
+            if (dispColumnIndex>4){
+              dispColumnIndex = 1;
+            }
+          } 
+        });
+        ////////////////////////
+      });
+
+      IQ_GetContentLogForUserAndVerb(CURRENT_PERSONID, _gStartedVerb, function(json){
+        $('#historytitletotal').html(json.subjectlog.length);
+      })
+
+      
+      
+    });
+
+    function getRevealModal(){
+      var halfwidth = parseInt(parseInt($('#detailModal').css('width')) / 2) * -1;
+      $('#detailModal').css('margin-left',halfwidth);
+      $('.ellegroModal').fadeToggle();
+    }
+
+    function hideRevealModal(){
+      $('.ellegroModal').fadeOut("fast"); 
+    }
+
+    /* 
+    Summary View Switcher
+    */
+    function showSummaryView(viewDiv){
+      $('.profiledashview').hide();
+      //
+      $('#'+viewDiv).fadeIn("fast");
+    }
+
+    /*
+    Profile Switcher
+    */
+
+    var currprofView = 1;
+    function gotoProfileView(num){
+      $('#profile'+currprofView).fadeOut('fast',function(){
+        currprofView = num;
+        $('#profile'+currprofView).fadeIn('fast');
+      });
+    }
+
+    /*****************************************
+    PROFILE SAVING
+    *****************************************/
+    function saveProfile(){
+      // we must get the details as per the various radios and the choices
+      var arrStr = "";
+      $(".detailedtag").each(function(index, el) {
+        // save tag string
+        arrStr += $(this).data("taglabel")+"~"+$(this).data("tagtype")+"~"+$(this).find('input[type="radio"]:checked').val() + "|#|";
+      });
+      arrStr = arrStr.substring(0,arrStr.length-3);
+      console.log("saving: " + arrStr);
+      IQ_SavePersonProfileWithMetaArrayStr(CURRENT_PERSONID, arrStr, function(jsonStr){
+        var json = jQuery.parseJSON(jsonStr+"");
+        if (json.results.error == 0){
+          hideRevealModal();
+        }else{
+          alert(json.results.message);
+        }
+      });
+    }
+
+
+    /********************************
+    TAG POPULATION
+    *********************************/
+
+    // consolidated function for actions!
+    function populateAllTags(){
+      populateSkillTags();
+      populateRespTags();
+      populateAspireTags();
+    }
+    ///
+    function populateSkillTags(){
+      var tagArray = skills_tags_list;
+      var divtarget = "skills_tagmylist";
+      var idprefix = "skilltag";
+      // for each tag array, we can set the visual accordingly.
+      skills_tags_global = new Array();
+      var mytagspiped = "||";
+      var detailedtagHTML = '';
+      for (var i = 0;i<tagArray.length;i++){
+        var currTag = skills_tags_list[i];
+        var tagId = idprefix + '' + (i+1);
+        var tag = currTag.tagLabel;// we also need to specify the skills tag value
+        // we must retain the value if it was already part of the view! :)
+        var divVal = $('input:radio[name=radio'+tagId+']:checked').val();
+        if (divVal != undefined){
+          currTag.tagValue = divVal;
+        }
+        //
+        mytagspiped += "||"+ tag + "||";
+        //
+        detailedtagHTML += '<div id="'+tagId+'" class="detailedtag" data-taglabel="'+tag+'" data-tagtype="'+currTag.molecule.tagtype+'">';
+        detailedtagHTML += '  <div class="deletebutton"><img src="images/redx.png" onclick="deleteMySkillTagForId(\''+tagId+'\')"></div><div class="taglabel">'+tag+'</div><br/>';
+        detailedtagHTML += '  <div class="tagradios">';
+        detailedtagHTML += '    <input type="radio" name="radio'+tagId+'" value="1" '+(currTag.tagValue == 1?"checked":"")+'>';
+        detailedtagHTML += '    <input type="radio" name="radio'+tagId+'" value="2" '+(currTag.tagValue == 2?"checked":"")+'>';
+        detailedtagHTML += '    <input type="radio" name="radio'+tagId+'" value="3" '+(currTag.tagValue == 3?"checked":"")+'>';
+        detailedtagHTML += '    <input type="radio" name="radio'+tagId+'" value="4" '+(currTag.tagValue == 4?"checked":"")+'>';
+        detailedtagHTML += '    <input type="radio" name="radio'+tagId+'" value="5" '+(currTag.tagValue == 5?"checked":"")+'><br/>';
+        detailedtagHTML += '  Low<span style="margin-right:215px">&nbsp;</span>High';
+        detailedtagHTML += '  </div>';
+        detailedtagHTML += '</div>';
+      }
+      $('#'+divtarget).html(detailedtagHTML);
+      // this should also remove the tags that are in the "tag list";
+      for (var i=0;i<app_SkillTags.length;i++){
+        var currTag = app_SkillTags[i];
+        if (mytagspiped.indexOf("||"+currTag+"||") == -1){
+          // it is still available
+          skills_tags_global.push(currTag);
+        }
+      }
+      // populate globaltags
+      var globaltagsHTML = '';
+      for (var i=0;i<skills_tags_global.length;i++){
+        var currGlobalTag = skills_tags_global[i];
+        globaltagsHTML += '<div class="tagCopy" onclick="addMySkillTag(\''+currGlobalTag+'\')"><span>'+currGlobalTag+'</span></div>'
+      }
+      $('#skills_globallist').html(globaltagsHTML);
+      //
+      $('#dashskillslabel_total').html(tagArray.length+" of "+app_SkillTags.length+"<br/>Possible Skills Selected");
+
+    }
+
+    function addMySkillTag(tag){
+      skills_tags_list.push({tagLabel:tag, tagValue:_gDefaultTagThreshold, molecule:{tagtype:'skill'}});
+      populateSkillTags();
+    }
+
+    function deleteMySkillTagForId(tagId){
+      //
+      var tag = $('#'+tagId).data("taglabel");
+      skills_tags_global.push(tag);
+      //
+      $('#'+tagId).remove();
+      // remove it from my list of skills_tags too :)
+      skills_tags_list = removeTagFromObjArray(tag, skills_tags_list);
+      //
+      populateSkillTags();
+    }
+
+     function populateRespTags(){
+      var tagArray = resps_tags_list;
+      var divtarget = "resps_tagmylist";
+      var idprefix = "resptag";
+      // for each tag array, we can set the visual accordingly.
+      resps_tags_global = new Array();
+      var mytagspiped = "||";
+      var detailedtagHTML = '';
+      for (var i = 0;i<tagArray.length;i++){
+        var currTag = resps_tags_list[i];
+        var tagId = idprefix + '' + (i+1);
+        var tag = currTag.tagLabel;// we also need to specify the skills tag value
+        // we must retain the value if it was already part of the view! :)
+        var divVal = $('input:radio[name=radio'+tagId+']:checked').val();
+        if (divVal != undefined){
+          currTag.tagValue = divVal;
+        }
+        //
+        mytagspiped += "||"+ tag + "||";
+        //
+        detailedtagHTML += '<div id="'+tagId+'" class="detailedtag" data-taglabel="'+tag+'" data-tagtype="'+currTag.molecule.tagtype+'">';
+        detailedtagHTML += '  <div class="deletebutton"><img src="images/redx.png" onclick="deleteMyRespTagForId(\''+tagId+'\')"></div><div class="taglabel">'+tag+'</div><br/>';
+        detailedtagHTML += '  <div class="tagradios">';
+        detailedtagHTML += '    <input type="radio" name="radio'+tagId+'" value="1" '+(currTag.tagValue == 1?"checked":"")+'>';
+        detailedtagHTML += '    <input type="radio" name="radio'+tagId+'" value="2" '+(currTag.tagValue == 2?"checked":"")+'>';
+        detailedtagHTML += '    <input type="radio" name="radio'+tagId+'" value="3" '+(currTag.tagValue == 3?"checked":"")+'>';
+        detailedtagHTML += '    <input type="radio" name="radio'+tagId+'" value="4" '+(currTag.tagValue == 4?"checked":"")+'>';
+        detailedtagHTML += '    <input type="radio" name="radio'+tagId+'" value="5" '+(currTag.tagValue == 5?"checked":"")+'><br/>';
+        detailedtagHTML += '  Low<span style="margin-right:215px">&nbsp;</span>High';
+        detailedtagHTML += '  </div>';
+        detailedtagHTML += '</div>';
+      }
+      $('#'+divtarget).html(detailedtagHTML);
+      // this should also remove the tags that are in the "tag list";
+      for (var i=0;i<app_RespTags.length;i++){
+        var currTag = app_RespTags[i];
+        if (mytagspiped.indexOf("||"+currTag+"||") == -1){
+          // it is still available
+          resps_tags_global.push(currTag);
+        }
+      }
+      // populate globaltags
+      var globaltagsHTML = '';
+      for (var i=0;i<resps_tags_global.length;i++){
+        var currGlobalTag = resps_tags_global[i];
+        globaltagsHTML += '<div class="tagCopy" onclick="addMyRespTag(\''+currGlobalTag+'\')"><span>'+currGlobalTag+'</span></div>'
+      }
+      $('#respss_globallist').html(globaltagsHTML);
+      //
+      $('#dashrespslabel_total').html(tagArray.length+" of "+app_RespTags.length+"<br/>Possible Responsibilities Selected");
+    }
+
+    function addMyRespTag(tag){
+      resps_tags_list.push({tagLabel:tag, tagValue:_gDefaultTagThreshold, molecule:{tagtype:'responsibility'}});
+      populateRespTags();
+    }
+
+    function deleteMyRespTagForId(tagId){
+      //
+      var tag = $('#'+tagId).data("taglabel");
+      resps_tags_global.push(tag);
+      //
+      $('#'+tagId).remove();
+      // remove it from my list of skills_tags too :)
+      resps_tags_list = removeTagFromObjArray(tag, resps_tags_list);
+      //
+      populateRespTags();
+    }
+
+    function populateAspireTags(){
+      var tagArray = aspires_tags_list;
+      var divtarget = "aspires_tagmylist";
+      var idprefix = "aspiretag";
+      // for each tag array, we can set the visual accordingly.
+      aspires_tags_global = new Array();
+      var mytagspiped = "||";
+      var detailedtagHTML = '';
+      for (var i = 0;i<tagArray.length;i++){
+        var currTag = aspires_tags_list[i];
+        var tagId = idprefix + '' + (i+1);
+        var tag = currTag.tagLabel;// we also need to specify the skills tag value
+        // we must retain the value if it was already part of the view! :)
+        var divVal = $('input:radio[name=radio'+tagId+']:checked').val();
+        if (divVal != undefined){
+          currTag.tagValue = divVal;
+        }
+        //
+        mytagspiped += "||"+ tag + "||";
+        //
+        detailedtagHTML += '<div id="'+tagId+'" class="detailedtag" data-taglabel="'+tag+'" data-tagtype="'+currTag.molecule.tagtype+'">';
+        detailedtagHTML += '  <div class="deletebutton"><img src="images/redx.png" onclick="deleteMyAspireTagForId(\''+tagId+'\')"></div><div class="taglabel">'+tag+'</div><br/>';
+        detailedtagHTML += '  <div class="tagradios">';
+        detailedtagHTML += '    <input type="radio" name="radio'+tagId+'" value="1" '+(currTag.tagValue == 1?"checked":"")+'>';
+        detailedtagHTML += '    <input type="radio" name="radio'+tagId+'" value="2" '+(currTag.tagValue == 2?"checked":"")+'>';
+        detailedtagHTML += '    <input type="radio" name="radio'+tagId+'" value="3" '+(currTag.tagValue == 3?"checked":"")+'>';
+        detailedtagHTML += '    <input type="radio" name="radio'+tagId+'" value="4" '+(currTag.tagValue == 4?"checked":"")+'>';
+        detailedtagHTML += '    <input type="radio" name="radio'+tagId+'" value="5" '+(currTag.tagValue == 5?"checked":"")+'><br/>';
+        detailedtagHTML += '  Low<span style="margin-right:215px">&nbsp;</span>High';
+        detailedtagHTML += '  </div>';
+        detailedtagHTML += '</div>';
+      }
+      $('#'+divtarget).html(detailedtagHTML);
+      // this should also remove the tags that are in the "tag list";
+      for (var i=0;i<app_AspireTags.length;i++){
+        var currTag = app_AspireTags[i];
+        if (mytagspiped.indexOf("||"+currTag+"||") == -1){
+          // it is still available
+          aspires_tags_global.push(currTag);
+        }
+      }
+      // populate globaltags
+      var globaltagsHTML = '';
+      for (var i=0;i<aspires_tags_global.length;i++){
+        var currGlobalTag = aspires_tags_global[i];
+        globaltagsHTML += '<div class="tagCopy" onclick="addMyAspireTag(\''+currGlobalTag+'\')"><span>'+currGlobalTag+'</span></div>'
+      }
+      $('#aspires_globallist').html(globaltagsHTML);
+      //
+      $('#dashaspireslabel_total').html(tagArray.length+" of "+app_AspireTags.length+"<br/>Possible Aspirations Selected");
+    }
+
+    function addMyAspireTag(tag){
+      aspires_tags_list.push({tagLabel:tag, tagValue:_gDefaultTagThreshold, molecule:{tagtype:'aspiration'}});
+      populateAspireTags();
+    }
+
+    function deleteMyAspireTagForId(tagId){
+      //
+      var tag = $('#'+tagId).data("taglabel");
+      aspires_tags_global.push(tag);
+      //
+      $('#'+tagId).remove();
+      // remove it from my list of skills_tags too :)
+      aspires_tags_list = removeTagFromObjArray(tag, aspires_tags_list);
+      //
+      populateAspireTags();
+    }
+
+    </script> 
+  
+</body>
+</html>

@@ -1,0 +1,177 @@
+/* Artfully masterminded by ZURB + Ellegro */
+
+.profile{
+	font-family: BrandonGrotesque-Regular;
+	background: #e0e0e0;
+	padding: 10px;
+	height: 276px;
+	margin: 5px;
+}
+.profilefooter{
+	font-family: BrandonGrotesque-Thin;
+	
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	height: 50px;
+	font-size: 18px;
+	padding: 17px;
+	margin: 5px;
+	color: #ffffff;
+
+	cursor: pointer;
+
+	text-transform: uppercase;
+}
+	.currentlearning{
+		background: #A63493;
+	}
+
+	.notificationcenter{
+		background: #D50036;
+	}
+
+	.engagement{
+		background: #99CA3B;
+	}
+
+	.learninghistory{
+		background: #019DDA;
+	}
+
+	/* Tag Summary view */
+	.dashskills{
+		background: #A73595;
+	}
+
+	.dashaspirations{
+		background: #99CA3B;
+	}
+
+	.dashresponsibilities{
+		background: #FF8201;
+	}
+	
+	.dashdetails{
+		background: #019DDA;
+	}
+
+.dashlabel{
+	font-size: 16px;
+	color: #000;
+}
+
+
+.profileview{
+	display: none;
+}
+
+.taglist{
+	height: 299px;
+	overflow-y: auto;
+}
+
+.tagCopy{
+	height: 50px;
+
+	border-bottom: solid #666 1px;
+
+	background-color: #fff;
+
+	padding: 15px;
+
+	cursor: pointer;
+}
+.tagCard{
+	border: solid #666 1px;
+
+	background-color: #ededed;
+}
+
+.tagCardDetails{
+	height: 299px;
+
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+
+.arrowInd{
+	height: 28px;
+	width: 18px;
+
+	position: absolute;
+
+	left: 25px;
+	top: 120px;
+
+	margin-top: auto;
+	margin-bottom: auto;
+
+    background: url('../images/arrow.png') no-repeat;
+}
+
+.detailedtag{
+	padding:10px;
+	border: solid #666 1px;
+}
+
+.taglabel{
+	display:inline;
+	margin-top:15px;
+	font-size: 15px;
+}
+
+.deletebutton{
+	display: inline;
+	margin-right:25px;
+}
+
+input[type=radio]{
+	margin-right: 40px;
+	margin-bottom: 10px;
+}
+
+.tagradios{
+	margin-left: 25px;
+	margin-top:10px;
+}
+
+
+.profiledashview{
+	display: none;
+}
+
+
+/* Central Dash */
+
+.historycard{
+	padding-top: 9px;
+	padding-bottom: 9px;
+	padding-left: 5px;
+}
+
+.historyimg{
+	height: 45px;
+	float:left;
+}
+
+.historytitlesmall{
+	top: 8px;
+	position: relative;
+	font-size: 14px;
+}
+
+.lefthalf{
+	border: solid #666 1px;
+	border-left: 0;
+	border-bottom:0;
+}
+
+.righthalf{
+	border: solid #666 1px;
+	border-right: 0;
+	border-left: 0;
+	border-bottom:0;
+}
+

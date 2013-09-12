@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Nielsen Portal Program Stack Landing</title>
+
+	<!-- Included CSS Files (Uncompressed) -->
+	<!--
+	<link rel="stylesheet" href="stylesheets/foundation.css">
+	-->
+
+	<!-- Included CSS Files (Compressed) -->
+	<link rel="stylesheet" href="stylesheets/foundation.min.css">
+
+	<!-- FONTS + APP CSS -->
+	<link href="stylesheets/ui-lightness/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+	<!-- <link rel="stylesheet" type="text/css" href="stylesheets/MyFontsWebfontsKit.css"> -->
+	<link rel="stylesheet" href="stylesheets/elsmaster.css">
+	<link rel="stylesheet" href="stylesheets/program-stack.css">
+
+	<!-- App CSS -->
+	<link rel="stylesheet" href="stylesheets/app.css">
+
+	<script src="javascripts/modernizr.foundation.js"></script>
+</head>
+<body>
+
+	<div class="row headerrow">
+		<div class="twelve columns">
+			<div class="headline"><span class="neilsenlogo"><img src="images/nielsen_logo.png"></span>MY LEARNING NETWORK</div>
+		</div>	<!-- /.twelve.columns -->
+	</div>	<!-- /.row.headerrow -->
+
+	<div class="row navrow">
+		<div class="twelve columns">
+			<a class="navtitles active">HOME</a>
+			<a class="navtitles">LEARNING OPPORTUNITIES</a>
+			<a class="navtitles">MY PROFILE</a>
+			<a class="navtitles">DISCUSSIONS</a>
+			<a class="navtitles">PEOPLE</a>
+			<a class="navtitles">PROJECTS &amp; JOBS</a>
+		</div>	<!-- /.twelve.columns -->
+	</div>	<!-- /.row.navrow -->
+
+	<div class="row welcomerow">
+		<div class="twelve columns mobile-four">
+			<div class="welcometitle">
+				<span id="welcomeid">WELCOME ANDREW</span><span style="margin:0px 23px;">|</span><span id="profileid">YOUR PROFILE</span>
+
+				<div class="profilemeter">
+					<div class="welcomeprofile">
+						<div id="profilepercent" style="width:54%">54%</div>
+					</div>	<!-- /.welcomeprofile -->
+				</div>	<!-- /.profilemeter -->
+
+				<span style="margin:0px 23px;">|</span>
+
+				<div class="searchcontainer">
+					<form id="searchForm" action="javascripts/sample.json">
+						<input type="text" id="q" placeholder="search" style="display:inline; width:160px; font-size:12px; height:18px; margin:0px; padding:0px 2px; background-color:#000; color:#f1f1f1; text-transform:uppercase; background: url('images/search.png') no-repeat right;">
+					</form>
+				</div>	<!-- /.searchcontainer -->
+			</div>	<!-- /.welcometitle -->
+		</div>	<!-- /.twelve.columns.mobile-four -->
+	</div>	<!-- /.row.welcomerow -->
+
+	<div class="row title-row">
+		<div class="one columns container-catalog">
+			<p><img src="images/btn-catalog.png" alt="Catalog"/></p>
+		</div>	<!-- /.one.columns.viewcontainer -->
+
+		<div class="eight columns container-title">
+			<h1>Learning Opportunities</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque facilisis justo ac turpis ornare blandit. Pellentesque convallis a elit vel luctus. Cras non tellus sed arcu lacinia vestibulum quis tincidunt lorem. Sed non lobortis sapien, a commodo urna. Phasellus et facilisis lorem. Suspendisse ac lorem ac tortor porta congue eget sit amet tortor. In varius ut nunc eget placerat. Nam quis nisi venenatis risus varius pharetra non eu quam.</p>
+		</div>	<!-- /.eight.columns.viewcontainer -->
+
+		<div class="three columns container-actions">
+			
+		</div>	<!-- /.three.columns.action-container -->
+	</div>	<!-- /.row.title-row -->
+
+	<div class="row content-row">
+		<div id="cardscontainer">
+			<div class="three columns">
+				<div class="programstack landing cf">
+					<div class="alert"></div>
+
+					<div class="row actions-row">
+						<div class="twelve columns"> <!--  -->
+							<div class="icon-link num-content"><a href="#" id="revealLink" data-reveal-id="results"># of Content</a></div>
+						</div>	<!-- /.twelve.columns -->
+					</div>	<!-- /.row.actions-row -->
+
+					<div class="row actions-row">
+						<div class="twelve columns">
+							<div class="icon-link created"><a href="#" data-reveal-id="preloader">Created</a></div>
+						</div>	<!-- /.twelve.columns -->
+					</div>	<!-- /.row.actions-row -->
+
+					<div class="row actions-row">
+						<div class="twelve columns">
+							<div class="icon-link upcoming"><a href="#">Upcoming Actions</a></div>
+						</div>	<!-- /.twelve.columns -->
+					</div>	<!-- /.row.actions-row -->
+
+					<div class="row actions-row">
+						<div class="twelve columns">
+							<div class="icon-link updates"><a href="#">Updates</a></div>
+						</div>	<!-- /.twelve.columns -->
+					</div>	<!-- /.row.actions-row -->
+
+					<div class="row title-row">
+						<div class="twelve columns">
+							<h3>Content Title</h3>
+						</div>	<!-- /.twelve.columns -->
+					</div>	<!-- /.row.title-row -->
+				</div>	<!-- /.programstack.landing.cf -->
+			</div>	<!-- /.three.columns -->
+
+			<div class="three columns">
+				<div class="programstack landing cf">
+					<div class="row actions-row">
+						<div class="twelve columns">
+							<div class="icon-link num-content"><a href="#" data-reveal-id="program1"># of Content</a></div>
+						</div>	<!-- /.twelve.columns -->
+					</div>	<!-- /.row.actions-row -->
+
+					<div class="row actions-row">
+						<div class="twelve columns">
+							<div class="icon-link created"><a href="#">Created</a></div>
+						</div>	<!-- /.twelve.columns -->
+					</div>	<!-- /.row.actions-row -->
+
+					<div class="row actions-row">
+						<div class="twelve columns">
+							<div class="icon-link upcoming"><a href="#">Upcoming Actions</a></div>
+						</div>	<!-- /.twelve.columns -->
+					</div>	<!-- /.row.actions-row -->
+
+					<div class="row actions-row">
+						<div class="twelve columns">
+							<div class="icon-link updates"><a href="#">Updates</a></div>
+						</div>	<!-- /.twelve.columns -->
+					</div>	<!-- /.row.actions-row -->
+
+					<div class="row title-row">
+						<div class="twelve columns">
+							<h3>Content Title</h3>
+						</div>	<!-- /.twelve.columns -->
+					</div>	<!-- /.row.title-row -->
+				</div>	<!-- /.programstack.landing.cf -->
+			</div>	<!-- /.three.columns -->
+
+			<div class="three columns">
+				<div class="programstack landing cf">
+					<div class="row actions-row">
+						<div class="twelve columns">
+							<div class="icon-link num-content"><a href="#"># of Content</a></div>
+						</div>	<!-- /.twelve.columns -->
+					</div>	<!-- /.row.actions-row -->
+
+					<div class="row actions-row">
+						<div class="twelve columns">
+							<div class="icon-link created"><a href="#">Created</a></div>
+						</div>	<!-- /.twelve.columns -->
+					</div>	<!-- /.row.actions-row -->
+
+					<div class="row actions-row">
+						<div class="twelve columns">
+							<div class="icon-link upcoming"><a href="#">Upcoming Actions</a></div>
+						</div>	<!-- /.twelve.columns -->
+					</div>	<!-- /.row.actions-row -->
+
+					<div class="row actions-row">
+						<div class="twelve columns">
+							<div class="icon-link updates"><a href="#">Updates</a></div>
+						</div>	<!-- /.twelve.columns -->
+					</div>	<!-- /.row.actions-row -->
+
+					<div class="row title-row">
+						<div class="twelve columns">
+							<h3>Content Title</h3>
+						</div>	<!-- /.twelve.columns -->
+					</div>	<!-- /.row.title-row -->
+				</div>	<!-- /.programstack.landing.cf -->
+			</div>	<!-- /.three.columns -->
+
+			<div class="three columns">
+				<div class="programstack landing cf">
+					<div class="alert"></div>
+
+					<div class="row actions-row">
+						<div class="twelve columns">
+							<div class="icon-link num-content"><a href="#"># of Content</a></div>
+						</div>	<!-- /.twelve.columns -->
+					</div>	<!-- /.row.actions-row -->
+
+					<div class="row actions-row">
+						<div class="twelve columns">
+							<div class="icon-link created"><a href="#">Created</a></div>
+						</div>	<!-- /.twelve.columns -->
+					</div>	<!-- /.row.actions-row -->
+
+					<div class="row actions-row">
+						<div class="twelve columns">
+							<div class="icon-link upcoming"><a href="#">Upcoming Actions</a></div>
+						</div>	<!-- /.twelve.columns -->
+					</div>	<!-- /.row.actions-row -->
+
+					<div class="row actions-row">
+						<div class="twelve columns">
+							<div class="icon-link updates"><a href="#">Updates</a></div>
+						</div>	<!-- /.twelve.columns -->
+					</div>	<!-- /.row.actions-row -->
+
+					<div class="row title-row">
+						<div class="twelve columns">
+							<h3>Content Title</h3>
+						</div>	<!-- /.twelve.columns -->
+					</div>	<!-- /.row.title-row -->
+				</div>	<!-- /.programstack.landing.cf -->
+			</div>	<!-- /.three.columns -->
+		</div>	<!-- /#cardscontainer -->
+	</div>	<!-- /.row.contentrow -->
+
+	<div class="row footerrow">
+		<div class="twelve columns">
+			footer row
+		</div>	<!-- /.twelve.columns -->
+	</div>	<!-- /.row.footerrow -->
+
+	<div id="program1" class="reveal-modal program-modal">
+		<div class="row">
+			<div class="eight columns">
+				<h2>Program Name Can Wrap to Two Lines if Need Lorem Ipsum</h2>
+
+				<div class="rating-component cf">
+					<div class="star selected"></div>
+					<div class="star selected"></div>
+					<div class="star selected"></div>
+					<div class="star selected"></div>
+					<div class="star unselected"></div>
+
+					<div class="tool-tip">
+						<div class="trigger">
+							<a href="#">Rate this program &gt;</a>
+
+							<div class="tip">
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque facilisis justo ac turpis ornare blandit. Pellentesque convallis a elit vel luctus. Cras non tellus sed arcu lacinia vestibulum quis...</p>
+							</div>
+
+							<div class="tip-arrows"><div class="tip-arrow-front"></div></div>
+						</div>
+					</div>
+				</div>
+
+				<h4><strong>Status:</strong> Recommended</h4>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque facilisis justo ac turpis ornare blandit. Pellentesque convallis a elit vel luctus. Cras non tellus sed arcu lacinia vestibulum quis...</p>
+
+				<button class="action">Action Button</button>
+
+				<div class="row container-prog-details">
+					<div class="eight columns">
+						<h5>Program Details</h5>
+						<ul class="no-bullets">
+							<li><span class="label">Type:</span> Accumenis asimintis</li>
+							<li><span class="label">Location:</span> Accumenis asimintis</li>
+							<li><span class="label">Skill:</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque facilisis justo ac turpis ornare blandit. Pellentesque convallis a elit vel luctus.</li>
+						</ul>	<!-- /.no-bullets -->
+					</div>	<!-- /.eight.columns -->
+				</div>	<!-- /.row -->
+			</div>	<!-- /.eight.columns -->
+
+			<div class="four columns container-related-content">
+				<h5>Related Content</h5>
+
+				<div class="item">
+					<h6>Content 1</h6>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque facilisis justo ac...</p>
+					<p class="more-details"><a href="#">More Details &gt;</a></p>
+				</div>	<!-- /.item -->
+
+				<div class="item">
+					<h6>Content 2</h6>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque facilisis justo ac...</p>
+					<p class="more-details"><a href="#">More Details &gt;</a></p>
+				</div>	<!-- /.item -->
+
+				<div class="item">
+					<h6>Content 3</h6>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque facilisis justo ac...</p>
+					<p class="more-details"><a href="#">More Details &gt;</a></p>
+				</div>	<!-- /.item -->
+
+				<div class="item">
+					<h6>Content 4</h6>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque facilisis justo ac...</p>
+					<p class="more-details"><a href="#">More Details &gt;</a></p>
+				</div>	<!-- /.item -->
+
+				<button>Load More</button>
+			</div>	<!-- /.four.columns -->
+		</div>	<!-- /.row -->
+
+		<a class="close-reveal-modal">x</a>
+	</div>	<!-- /#program1.reveal-modal.program-modal -->
+
+	<div id="results" class="reveal-modal search-results-modal">
+		<div class="container-results-header">
+			<div class="results-count"><span id="resultCount">434</span> Results</div>
+
+			<div class="results-filter"><a href="#">Filter Results</a></div>
+
+			<div class="searchcontainer">
+				<form id="searchResultsForm" action="javascripts/sample.json">
+					<input type="text" id="resultsField" placeholder="search">
+				</form>
+			</div>	<!-- /.searchcontainer -->
+
+			<div class="arrow"></div>
+		</div>	<!-- /.container-results-header -->
+
+		<div id="resultsContainer" class="container-results">
+			<div class="item cf">
+				<div class="detail-icon">
+					<p><img src="images/icon-card-title.png" alt=""/></p>
+				</div>
+
+				<div class="details">
+					<h3>Content Tile</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec adipiscing orci. Curabitur blandit turpis et lectus adipiscing, a egestas neque ultrices. Nunc at mattis dui. Aenean sollicitudin, urna nec venenatis elementum, urna nisl...</p>
+				</div>
+
+				<div class="status">
+					<p><img src="images/icon-completed.png" alt=""/></p>
+				</div>
+
+				<div class="actions">
+					<div class="icon-link discussion-widget"><a href="#">Et et ipis</a></div>
+					<div class="icon-link rating-widget"><a href="#">Nos ovit a</a></div>
+				</div>
+			</div>	<!-- /.item -->
+
+			<div class="item cf">
+				<div class="detail-icon">
+					<p><img src="images/icon-card-title.png" alt=""/></p>
+				</div>
+
+				<div class="details">
+					<h3>Content Tile</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec adipiscing orci. Curabitur blandit turpis et lectus adipiscing, a egestas neque ultrices. Nunc at mattis dui. Aenean sollicitudin, urna nec venenatis elementum, urna nisl...</p>
+				</div>
+
+				<div class="status">
+					<p><img src="images/icon-completed.png" alt=""/></p>
+				</div>
+
+				<div class="actions">
+					<div class="icon-link discussion-widget"><a href="#">Et et ipis</a></div>
+					<div class="icon-link rating-widget"><a href="#">Nos ovit a</a></div>
+				</div>
+			</div>	<!-- /.item -->
+		</div>	<!-- /.container-results -->
+
+		<div class="container-results-footer">
+			<a href="#" class="arrow prev inactive"></a>
+			<ul>
+				<li><a href="#">1</a></li>
+				<li><a href="#">2</a></li>
+				<li><a href="#">3</a></li>
+				<li><a href="#">4</a></li>
+				<li><a href="#">...</a></li>
+			</ul>
+			<a href="#" class="arrow next"></a>
+		</div>	<!-- /.container-results-footer -->
+
+		<a class="close-reveal-modal">x</a>
+	</div>	<!-- /#program1.reveal-modal.program-modal -->
+
+	<div id="preloader" class="reveal-modal">
+		<div class="row">
+			<div class="three small-centered columns">
+				<img src="images/preloader.gif" alt=""/>
+			</div>	<!-- /.three.columns -->
+		</div>	<!-- /.row -->
+
+		<a class="close-reveal-modal">x</a>
+	</div>	<!-- /#program1.reveal-modal.program-modal -->
+
+	<!-- Included JS Files (Uncompressed) -->
+	<!--
+	<script src="javascripts/jquery.js"></script>
+	<script src="javascripts/jquery.foundation.mediaQueryToggle.js"></script>
+	<script src="javascripts/jquery.foundation.forms.js"></script>
+	<script src="javascripts/jquery.event.move.js"></script>
+	<script src="javascripts/jquery.event.swipe.js"></script>
+	<script src="javascripts/jquery.foundation.reveal.js"></script>
+	<script src="javascripts/jquery.foundation.orbit.js"></script>
+	<script src="javascripts/jquery.foundation.navigation.js"></script>
+	<script src="javascripts/jquery.foundation.tabs.js"></script>
+	<script src="javascripts/jquery.foundation.topbar.js"></script>
+	<script src="javascripts/jquery.foundation.joyride.js"></script>
+	<script src="javascripts/jquery.foundation.clearing.js"></script>
+	<script src="javascripts/jquery.foundation.magellan.js"></script>
+	-->
+  
+	<!-- Included JS Files (Compressed) -->
+	<script src="javascripts/jquery-1.9.1.js"></script>
+	<script src="javascripts/jquery-ui-1.10.3.custom.js"></script>
+	<script src="javascripts/foundation.min.js"></script>
+
+	<!-- Initialize JS Plugins -->
+	<script src="javascripts/app.js"></script>
+	<script src="javascripts/search.js"></script>
+  
+	<script>
+		$(window).load(function(){
+			$('#cardscontainer').hide();
+			//$('#cardscontainer').html(getSampleCards('templatecard'));
+			$('#cardscontainer').fadeIn(500);
+		});
+
+		function getSampleCards(templatediv){
+			var template = $('#' + templatediv).html();
+			var ret_str = '';
+			for (var i=0; i<8; i++){
+				ret_str += template;
+			}
+			return ret_str;
+		}
+	</script>
+
+</body>
+</html>

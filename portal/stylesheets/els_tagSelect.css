@@ -1,0 +1,191 @@
+/* Artfully masterminded by ZURB + Ellegro */
+
+.taglist{
+	height: 250px;
+	overflow-y: auto;
+}
+
+.detailedtag{
+	padding:10px;
+	border-bottom: solid #666 1px;
+
+	background-color: #fff;
+}
+.deletebutton{
+	height: 23px;
+
+	background: url('../images/redx.png') no-repeat;
+
+	margin-right:25px;
+	margin-bottom:20px;
+}
+.deletebutton span{
+	position: relative;
+
+	top: 5px;
+	left: 15px;
+}
+.deleteHover{
+	position: fixed;
+
+	width: 170px;
+	height: 100px;
+
+	display: none;
+
+	background: url('../images/hover_tooltip.png') left top no-repeat;
+
+	z-index: 1000;
+	margin: 0;
+	padding: 28px 15px;
+
+	text-align: center;
+}
+.deleteSpot{
+	height: 23px;
+	width: 23px;
+
+	cursor: pointer;
+
+	float: left;
+}
+input[type=radio]{
+	margin-right: 40px;
+	margin-bottom: 10px;
+}
+
+.tagradios{
+	margin-left: 40px;
+	margin-top:10px;
+}
+
+/* ----------------------------------------------
+	Content (Main) 
+-------------------------------------------------*/
+
+.formtitle{
+	font-family: BrandonGrotesque-Thin;
+	font-size: 22px;
+	font-weight: 100;
+	letter-spacing: 0.08em; /*1000 tracking is 1 em; Styleguide says 80 tracking */
+	color: #009DD9;
+
+	display: block;
+
+	padding: 0 0 15px 0;
+}
+#modalBodyCopy{
+	font-family: Arial;
+	font-size: 12px;
+	letter-spacing: 0.08em; 
+	color: #4d4d4f;
+
+	padding: 0;
+}
+.tagCopy{
+	height: 50px;
+
+	border-bottom: solid #666 1px;
+
+	background-color: #fff;
+
+	padding: 15px;
+
+	cursor: pointer;
+}
+.tagCard{
+	border: solid #666 1px;
+
+	background-color: #ededed;
+}
+.tagCardDetails{
+	height: 299px;
+
+	overflow-y: scroll;
+	overflow-x: hidden;
+}
+.arrowInd{
+	height: 28px;
+	width: 18px;
+
+	position: absolute;
+
+	left: 25px;
+	top: 120px;
+
+	margin-top: auto;
+	margin-bottom: auto;
+
+    background: url('../images/arrow.png') no-repeat;
+}
+#detailTagHolder{
+	height: 299px;
+
+	border: solid #666 1px;
+
+	background-color: #ededed;
+}
+.tagTT{
+	width: 170px;
+	height: 100px;
+
+	position: fixed;
+	background: url('../images/hover_tooltip.png') no-repeat;
+
+	display: none;
+	position: fixed;
+	z-index: 700;
+}
+.ttHit{
+	position: relative;
+	height: 20px;
+	width: 300px;
+}
+
+/* ----------------------------------------------
+	Buttons - MH
+-------------------------------------------------*/
+.yesButton{
+	height: 30px;
+
+	padding: 9px 25px 0 25px;
+
+	background-color: #8bc540;
+
+	cursor: pointer;
+
+	font-size: 12px;
+	letter-spacing: 0.025em;
+	text-align: center;
+
+	color: #ffffff;
+
+	position: relative;
+}
+.yesButton:hover {
+	background-color: #99ff00;
+}
+.noButton{
+	height: 30px;
+
+	padding: 9px 25px 0 25px;
+
+	background-color: #d50037;
+
+	cursor: pointer;
+
+	font-size: 12px;
+	letter-spacing: 0.025em;
+	text-align: center;
+
+	color: #ffffff;
+
+	position: relative;
+	float: right;
+}
+.noButton:hover {
+	background-color: #ff0033;
+}
+.buttonHolder{
+	padding: 15px 0;
+}

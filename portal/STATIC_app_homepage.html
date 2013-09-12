@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile -->
+  <meta name="viewport" content="width=device-width" />
+
+  <title>Nielsen Portal Master Page</title>
+  
+  <!-- Included CSS Files (Uncompressed) -->
+  <!--
+  <link rel="stylesheet" href="stylesheets/foundation.css">
+  -->
+  
+  <!-- Included CSS Files (Compressed) -->
+  <link rel="stylesheet" href="stylesheets/foundation.min.css">
+
+  <!-- FONTS + APP CSS -->
+  <link href="stylesheets/ui-lightness/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+  <!-- <link rel="stylesheet" type="text/css" href="stylesheets/MyFontsWebfontsKit.css"> -->
+  <link rel="stylesheet" href="stylesheets/elsmaster.css">
+  
+  <!-- App CSS -->
+  <link rel="stylesheet" href="stylesheets/app.css">
+
+  <script src="javascripts/modernizr.foundation.js"></script>
+</head>
+<body>
+
+  <div class="row headerrow">
+    <div class="twelve columns">
+      <div class="headline"><span class="neilsenlogo"><img src="images/nielsen_logo.png"></span>MY LEARNING NETWORK</div>
+    </div>
+  </div>
+  <div class="row navrow">
+    <div class="twelve columns">
+      <a class="navtitles active">HOME</a>
+      <a class="navtitles">LEARNING OPPORTUNITIES</a>
+      <a class="navtitles">MY PROFILE</a>
+      <a class="navtitles">DISCUSSIONS</a>
+      <a class="navtitles">PEOPLE</a>
+      <a class="navtitles">PROJECTS &amp; JOBS</a>
+    </div>
+  </div>
+  <div class="row welcomerow">
+    <div class="twelve columns mobile-four">
+      <div class="welcometitle">
+        <span id="welcomeid">WELCOME ANDREW</span><span style="margin:0px 23px;">|</span><span id="profileid">YOUR PROFILE</span>
+        <div class="profilemeter">
+          <div class="welcomeprofile">
+            <div id="profilepercent" style="width:54%">54%</div>
+          </div>
+        </div>
+        <span style="margin:0px 23px;">|</span>
+        <div class="searchcontainer">
+          <input type="text" placeholder="search" style="display:inline; width:160px; font-size:12px; height:18px; margin:0px; padding:0px 2px; background-color:#000; color:#f1f1f1; text-transform:uppercase; background: url('images/search.png') no-repeat right;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row contentrow">
+    <div class="viewcontainer">
+      functionality shtuff   
+    </div>
+    <div id="cardscontainer">
+      <div id="templatecard">
+        <div class="three columns">
+          <div class="programcard-home">
+            <div class="programalert"><img src="images/program-alert-notif.png"></div>
+            <div class="programtitlecontainer">
+              <div class="three columns">
+                <img src="images/programcard-icon.png">
+              </div>
+              <div class="nine columns">
+                <span class="programtitle">Title Text A BSE A Wrap</span>
+              </div>
+            </div>
+            <div class="twelve columns">
+              <p class="programcard-descr">What et lacea deliqui restam deliqui restam deliqui restam deliqui restam deliqui restam deliqui restam deliqui restam deliqui <br/><br/><a>More Details &gt;</a></p>
+            </div>
+            <div class="row actions-row">
+              <div class="six columns">
+                <img src="images/ratings.png" >
+              </div>
+              <div class="six columns">
+                <img src="images/discussions.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row footerrow">
+    <div class="twelve columns">
+      footer row
+    </div>
+  </div>
+
+  <div id="exampleModal" class="reveal-modal">
+    <h2>This is a modal.</h2>
+    <p>
+      Reveal makes these very easy to summon and dismiss. The close button is simple an anchor with a unicode 
+      character icon and a class of <code>close-reveal-modal</code>. Clicking anywhere outside the modal will 
+      also dismiss it.
+    </p>
+    <a class="close-reveal-modal">×</a>
+  </div>
+  
+  
+  <!-- Included JS Files (Uncompressed) -->
+  <!--
+  <script src="javascripts/jquery.js"></script>
+  <script src="javascripts/jquery.foundation.mediaQueryToggle.js"></script>
+  <script src="javascripts/jquery.foundation.forms.js"></script>
+  <script src="javascripts/jquery.event.move.js"></script>
+  <script src="javascripts/jquery.event.swipe.js"></script>
+  <script src="javascripts/jquery.foundation.reveal.js"></script>
+  <script src="javascripts/jquery.foundation.orbit.js"></script>
+  <script src="javascripts/jquery.foundation.navigation.js"></script>
+  <script src="javascripts/jquery.foundation.tabs.js"></script>
+  <script src="javascripts/jquery.foundation.topbar.js"></script>
+  <script src="javascripts/jquery.foundation.joyride.js"></script>
+  <script src="javascripts/jquery.foundation.clearing.js"></script>
+  <script src="javascripts/jquery.foundation.magellan.js"></script>
+  
+  -->
+  
+  <!-- Included JS Files (Compressed) -->
+  <script src="javascripts/foundation.min.js"></script>
+  <script src="javascripts/jquery-1.9.1.js"></script>
+  <script src="javascripts/jquery-ui-1.10.3.custom.js"></script>
+  
+  <!-- Initialize JS Plugins -->
+  <script src="javascripts/iqapi.js"></script>
+  <script src="javascripts/app.js"></script>
+
+  
+    <script>
+    $(window).load(function(){
+      IQ_GetPersonDetails("sample user [ANDREW] using IQApi",function(json){
+        alert(json.result);
+      });
+      $('#cardscontainer').hide();
+      $('#cardscontainer').html(getSampleCards('templatecard'));
+      $('#cardscontainer').fadeIn(500);
+    });
+
+
+
+
+    function getSampleCards(templatediv){
+      var template = $('#'+templatediv).html();
+      var ret_str = '';
+      for (var i=0;i<(4+Math.round(Math.random()*4));i++){
+        ret_str += template;
+      }
+      return ret_str;
+    }
+    </script> 
+  
+</body>
+</html>

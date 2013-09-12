@@ -1,0 +1,28 @@
+/* Artfully masterminded by ZURB + Ellegro */
+
+html{
+	background: #ffffff;
+
+	font-family: BrandonGrotesque-Thin;
+
+}
+
+/* -----------------------------------------
+	Font, Color setup
+----------------------------------------- */
+
+
+
+/* -----------------------------------------
+	Major Row Delimiters 
+-------------------------------------------*/
+a {
+	display: inline-block;
+	margin: 10px;
+	padding: 5px;
+}
+
+a:hover{
+	background: #000;
+	color: #fff;
+}

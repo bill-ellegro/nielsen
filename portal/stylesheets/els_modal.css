@@ -1,0 +1,162 @@
+/* ----------------------------------------------
+	Custom Modals - MH
+-------------------------------------------------*/
+
+.ellegroModal{
+	display: none;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.5);
+}
+#detailModal{
+	background: #fff;
+	top: 197px;
+	left: 50%;
+	width: 900px;
+	min-height: 430px;
+	position: absolute;
+	z-index: 100;
+	padding: 37px 5px 37px 28px;
+	-webkit-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0 0 10px rgba(0,0,0,0.4);
+	box-shadow: 0 0 10px rgba(0,0,0,0.4);
+}
+.closeReveal{
+	cursor: pointer;
+	position: absolute;
+	font-weight: 700;
+	float: right;
+	right: 15px;
+	top: 15px;
+}
+
+/* ----------------------------------------------
+	Modal Content - MH
+-------------------------------------------------*/
+
+.divider{
+	position: absolute;
+	right: 310px;
+	height: 356px;
+	width: 0px;
+	border-style:solid;
+	border-width:1px;
+	border-color: #939598;
+}
+
+/* ----------------------------------------------
+	Column #1 (Main) - MH
+-------------------------------------------------*/
+
+#modalContent{
+	padding: 0 28px 0 0; /*spacing between content elements*/
+}
+.modalHeadline{
+	font-family: BrandonGrotesque-Thin;
+	font-size: 22px;
+	font-weight: 100;
+	letter-spacing: 0.08em; /*1000 tracking is 1 em; Styleguide says 80 tracking */
+	color: #009DD9;
+
+	display: block;
+}
+#modalStatusHeadline{
+	font-family: BrandonGrotesque-Thin;
+	font-size: 16px;
+	letter-spacing: 0.08em; 
+	color: #939598;
+
+	padding: 0 0 15px 0;
+}
+#modalBodyCopy; #modalSubContent{
+	font-family: Arial;
+	font-size: 12px;
+	letter-spacing: 0.08em; 
+	color: #4d4d4f;
+
+	padding: 0;
+}
+#modalSubhead{
+	font-family: BrandonGrotesque-Thin;
+	font-size: 15px;
+	letter-spacing: 0.08em; 
+	color: #4d4d4f;
+
+	padding: 0;
+	margin: 0 0 15px 0;
+}
+#modalHighlight{
+	font-family: Arial;
+	font-size: 12px;
+	letter-spacing: 0.08em; 
+
+	color: #009DD9;
+
+	float: left;
+}
+#modalHighlight2{
+	font-family: Arial;
+	font-size: 11px;
+	letter-spacing: 0.08em; 
+
+	color: #009DD9;
+}
+
+/* ----------------------------------------------
+	Column #2 (Attendees) - MH
+-------------------------------------------------*/
+
+.attendeeCard{
+	height: 30px;
+	margin: 20px 0 0 0;
+}
+#attendeeIcon{
+	height: 30px;
+	background: url('../images/programcard-icon.png') no-repeat;
+}
+#attendeeContent{
+	position: relative;
+	top: 4px;
+	margin: 0 0 0 45px;
+
+	font-size: 10px;
+	font-weight: 700;
+	letter-spacing: 0.08em; 
+	color: #939598;
+}
+
+/* ----------------------------------------------
+	Column #3 (Related Content) - MH
+-------------------------------------------------*/
+.attendeeCardDetails{
+	height: 50px;
+	margin: 20px 0 15px 0;
+}
+#attendeeContent2{
+	position: relative;
+	top: -4px;
+	margin: 0 0 0 45px;
+
+	font-size: 10px;
+	font-weight: 700;
+	letter-spacing: 0.08em; 
+	color: #939598;
+}
+
+/* ----------------------------------------------
+	star-rating' component
+-------------------------------------------------*/
+
+.starRate {position:relative; margin:15px 15px 15px 0; overflow:hidden; zoom:1;}
+.starRate ul {width:160px; margin:0; padding:0;}
+.starRate li {display:inline; list-style:none;}
+.starRate a, .starRate b {background:url(../images/blueStars.png) left top repeat-x;}
+.starRate a {float:right; margin:0 80px 0 -144px; width:80px; height:16px; background-position:left 16px; color:#000; text-decoration:none;}
+.starRate a:hover {background-position:left -32px;}
+.starRate b {position:absolute; z-index:-1; width:80px; height:16px; background-position:left -16px;}
+.starRate div b {left:0px; bottom:0px; background-position:left top;}
+.starRate a span {position:absolute; left:-300px;}
+.starRate a:hover span {left:90px; width:100%;}

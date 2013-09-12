@@ -1,0 +1,383 @@
+html{
+	background: #ffffff;
+}
+
+/* -----------------------------------------
+	Font, Color setup
+----------------------------------------- */
+html p{
+	color: #4d4d4f;
+	letter-spacing: 0.08em; 
+}
+
+/* -----------------------------------------
+	Major Row Delimiters 
+-------------------------------------------*/
+.row{
+	padding: 0 42px;
+}
+
+
+.headerrow{
+	background: #f1f1f1;
+}
+
+.navrow{
+	background: #f1f1f1;
+	padding: 0 0 23px 42px;
+}
+
+.welcomerow{
+	background: #000000;
+	margin-bottom: 0;
+
+	height: 40px;
+
+	font-family: BrandonGrotesque-Thin;
+
+	color: #fff;
+}
+
+.contentrow{
+	min-height: 700px;
+	background: url('../images/nielsen_middle.png') no-repeat;
+
+	color: #fff;
+}
+
+.footerrow{
+	margin-top: 50px;
+	min-height: 45px;
+	background: #808084;
+
+	color: #fff;	
+}
+
+/* ----------------------------------------------
+	Header & Styling
+-------------------------------------------------*/
+
+.headline{
+	font-family: BrandonGrotesque-Regular;
+	
+	font-size: 40px;
+	letter-spacing: 0.08em; 
+
+	color: #009DD9;
+
+	display: block;
+	padding: 35px 0 35px 0;
+
+}
+	.neilsenlogo{
+		margin-right: 39px;
+	}
+
+.navtitles{
+	font-family: BrandonGrotesque-Regular;
+	
+	cursor: pointer;
+
+	font-size: 13px;
+	letter-spacing: 0.08em;
+
+	padding: 0 45px 0 0;
+	color: #000000;
+}
+
+.navtitles.active{
+	color: #0088CC;
+}
+
+
+.navtitles :hover{
+	color: #009DD9;
+}
+
+.welcometitle{
+	font-family: BrandonGrotesque-Regular;
+	color: #f1f1f1;
+
+	font-size: 14px;
+	letter-spacing: 0.08em;
+
+	margin: 13px 0;
+}
+
+.profilemeter{
+	display: inline-block;
+}
+	.welcomeprofile{
+		height: 13px;
+		width: 160px;
+		margin-left: 14px;
+		padding: 0;
+		background: #2B292A;
+	}
+
+	.welcomeprofile > div{
+		height: 100%;
+		background: #009DD9;
+		
+		font-family: BrandonGrotesque-Regular;
+
+		font-size: 12px;
+		padding-left: 3px;
+
+		color: #f1f1f1;
+	}
+
+.searchcontainer{
+	display:inline; 
+	height:100%; 
+	width:200px;
+}
+
+.searchcontainer.search{
+	display:inline; 
+	width:160px; 
+	font-size:12px; 
+	height:18px; 
+	margin: 0; 
+	padding: 0 2px; 
+	background:#000; 
+	color:#f1f1f1; 
+	text-transform:uppercase;
+
+}
+
+#welcomesearchfield{
+	font-size:12px;
+	height: 20px;
+	margin-top: 0;
+	width:50%; 
+	display:inline;
+}
+
+.viewcontainer{
+	margin: 20px 0;
+}
+
+/*
+	HOME CARD
+*/
+
+.programcard-home{
+	background: #f1f1f1;
+	border-radius: 1px;
+	border: 1px solid #fff;
+	margin: 10px;
+	padding: 0 0 17px 0;
+
+	min-height:230px;
+
+	min-width: 220px;
+}
+
+	.programalert{
+		float:left;
+		top: 0;
+		left: 0;
+	}
+
+	.programtitlecontainer{
+		margin: 20px;
+		padding: 0;
+	}
+
+	.programicon{
+		display: inline;
+		margin-bottom: 100px;
+	}
+
+	.programtitle{
+		font-family: BrandonGrotesque-Thin;
+		
+		margin: 0;
+		padding: 0;
+
+		position: relative;
+		
+
+		font-size: 17px;
+		line-height: 1.15em;
+		letter-spacing: 0.08em;
+		text-transform:uppercase;
+		color: #009DD9;
+	}
+
+	.programcard-descr{
+		font-family: 'Arial', sans-serif;
+
+		margin-left: 20px;
+		margin-right: 20px;
+		margin-top: 10px;
+
+		line-height: 1.35em;
+		letter-spacing: 0.08em;
+
+		font-size: 12px;
+		color: #4d4d4f;
+	}
+
+.pagetitle{
+	font-family: BrandonGrotesque-Thin;
+	
+	display: block;
+	
+	font-size: 24px;
+	margin-top: 18px;
+	text-transform: uppercase;
+
+	color: #009DD9;
+}
+
+.formtitle{
+	font-family: BrandonGrotesque-Thin;
+	
+	display: block;
+	cursor: pointer;
+	
+	font-size: 24px;
+	text-transform: uppercase;
+
+	color: #009DD9;
+	margin-bottom: 25px;
+}
+
+.profilecardtitle{
+	font-family: BrandonGrotesque-Thin;
+	
+	display: block;
+	width: 100%;
+	font-size: 16px;
+	text-align: right;;
+	text-transform: uppercase;
+
+	margin-bottom: 10px;
+
+	color: #009DD9;
+}
+
+.formlabel{
+	font-family: BrandonGrotesque-Regular;
+	
+	display: block;
+	cursor: pointer;
+	
+	font-size: 18px;
+	text-transform: uppercase;
+
+	margin-bottom: 8px;
+
+	color: #2B292A;	 
+}
+
+.padded{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+/* ----------------------------------------------
+	Buttons
+-------------------------------------------------*/
+
+.primaryButton{
+	height: 30px;
+	width: auto; 
+
+	padding: 9px 25px 0 25px;
+	margin: 15px 0px 28px 0px;
+
+	background-color: #0088CC;
+
+	cursor: pointer;
+
+	font-size: 12px;
+	letter-spacing: 0.025em;
+	text-align: center;
+
+	color: #ffffff;
+
+	display: inline-block;
+}
+.primaryButton:hover {
+	background-color: #009DD9;
+}
+
+	.primaryButton.fluid{
+		width: auto;
+	}
+
+.secondaryButton{
+	height: 30px;
+	width: auto;
+
+	padding: 9px 25px 0 25px;
+	margin: 15px 0px 28px 0px;
+
+	background-color: #000000;
+
+	cursor: pointer;
+
+	font-size: 12px;
+	letter-spacing: 0.025em;
+	text-align: center;
+
+	color: #ffffff;
+
+	display: inline-block;
+}
+
+.secondaryButton:hover {
+	background-color: #8f8f8f;
+}
+
+	.secondaryButton.fluid{
+		width: auto;
+	}
+
+.yesButton{
+	height: 30px;
+
+	padding: 9px 25px 0 25px;
+
+	background-color: #8bc540;
+
+	cursor: pointer;
+
+	font-size: 12px;
+	letter-spacing: 0.025em;
+	text-align: center;
+
+	color: #ffffff;
+
+	position: relative;
+}
+.yesButton:hover {
+	background-color: #99ff00;
+}
+.noButton{
+	height: 30px;
+
+	padding: 9px 25px 0 25px;
+
+	background-color: #d50037;
+
+	cursor: pointer;
+
+	font-size: 12px;
+	letter-spacing: 0.025em;
+	text-align: center;
+
+	color: #ffffff;
+
+	position: relative;
+	float: right;
+}
+.noButton:hover {
+	background-color: #ff0033;
+}
+.buttonHolder{
+	padding: 15px 0;
+}

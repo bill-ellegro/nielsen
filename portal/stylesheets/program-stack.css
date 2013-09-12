@@ -1,0 +1,681 @@
+/* Artfully masterminded by ZURB + Ellegro 		 */
+/* ----------------------------------------------
+	General Styles
+-------------------------------------------------*/
+
+button {
+	background-color: #000000;
+	border: 1px solid #000000;
+	color: #ffffff;
+	font-size: 12px;
+	padding: 4px 20px 6px;
+}
+
+button.action {
+	background-color: #0188cc;
+	border: 1px solid #0188cc;
+}
+
+h1 {
+	color: #009DD9;
+	font: normal normal 24px/1.1em BrandonGrotesque-Thin;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+h2 {
+	color: #009DD9;
+	font-family: BrandonGrotesque-Thin;
+	font-size: 15px;
+	font-weight: normal;
+	line-height: 1.1em;
+	text-transform: uppercase;
+}
+
+h3 {
+	color: #009DD9;
+	font-size: 13px;
+	font-weight: normal;
+	line-height: 1.1em;
+	text-transform: uppercase;
+}
+
+h4 {
+	color: #929397;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 1.1em;
+	text-transform: uppercase;
+}
+
+h5 {
+	color: #4c4c4c;
+	font-size: 14px;
+	line-height: 1.1em;
+	text-transform: uppercase;
+}
+
+h6 {
+	color: #959698;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 0;
+}
+
+ul.no-bullets {
+	
+}
+
+ul.no-bullets li {
+	list-style-type: none;
+}
+
+.cf:before,
+.cf:after {
+	content: " "; /* 1 */
+	display: table; /* 2 */
+}
+
+.cf:after {
+	clear: both;
+}
+
+.column.small-centered, .columns.small-centered {
+    float: none !important;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+
+.searchcontainer form {
+	display: inline-block;
+}
+
+/* ----------------------------------------------
+	Program Stack
+-------------------------------------------------*/
+
+.programstack {
+	background: #f1f1f1;
+	border-radius: 1px;
+	margin: 10px 10px 25px 10px;
+	min-width: 220px;
+	padding: 20px;
+	position: relative;
+}
+
+.programstack h2 {
+	background: transparent url(../images/icon-card-title.png) no-repeat 0 50%;
+	display: table-cell;
+	margin-left: 0px;
+	height: 40px;
+	padding: 0 0 0 50px;
+	vertical-align: middle;
+}
+
+.programstack .alert {
+	border-style: solid;
+	border-width: 20px 20px 0 0;
+	border-color: #d50037 transparent transparent transparent;
+	height: 0;
+	left: 1px;
+	position: absolute;
+	top: 1px;
+	width: 0;
+}
+
+.programstack .banner {
+	border: 1px solid #ffffff;
+	border-width: 1px 0;
+	bottom: 50px;
+	height: 60px;
+	left: 0;
+	padding: 15px 40px;
+	position: absolute;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+.programstack .banner.completed {
+	background-color: #8bc540;
+	color: #ffffff;
+}
+
+.programstack .banner.excluded {
+	background-color: #c8c8c8;
+	color: #4d4d4f;
+}
+
+.programstack .banner div {
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: 0 50%;
+	font-size: 16px;
+	min-height: 30px;
+	padding: 6px 0 6px 40px;
+	text-align: center;
+}
+
+.programstack .banner.completed div {
+	background-image: url(../images/icon-completed.png);
+}
+
+.programstack .banner.excluded div {
+	background-image: url(../images/icon-excluded.png);
+}
+
+.programstack .content-row p {
+	color: #4d4d4f;
+	font: normal normal 12px/1.15em 'Arial', sans-serif;
+	margin-top: 10px;
+}
+
+.programstack .more-details-row p {
+	color: #000;
+	font: normal normal 12px/1.15em 'Arial', sans-serif;
+	margin: 10px 0 0;
+}
+
+.programstack .row {
+	padding: 0;
+}
+
+.programstack.landing h3 {
+	margin-bottom: 0px;
+}
+
+/* ----------------------------------------------
+	Component - Icon Link
+-------------------------------------------------*/
+
+.programstack.landing .icon-link {
+	margin: 0 0 10px 0;
+}
+
+.icon-link a {
+	color: #000000;
+	display: table-cell;
+	font-size: 10px;
+	height: 30px;
+	padding: 0 0 0 35px;
+	vertical-align: middle;
+}
+
+.icon-link.num-content a {
+	background: transparent url(../images/icon-num-content.png) no-repeat 0 50%;
+}
+
+.icon-link.updates a {
+	background: transparent url(../images/icon-updates.png) no-repeat 0 50%;
+}
+
+.icon-link.created a {
+	background: transparent url(../images/icon-created.png) no-repeat 0 50%;
+}
+
+.icon-link.upcoming a {
+	background: transparent url(../images/icon-upcoming.png) no-repeat 0 50%;
+}
+
+.icon-link.rating-widget a {
+	background: transparent url(../images/icon-ratings.png) no-repeat 0 50%;
+}
+
+.icon-link.discussion-widget a {
+	background: transparent url(../images/icon-discussions.png) no-repeat 0 50%;
+}
+
+/* ----------------------------------------------
+	Container: Actions
+-------------------------------------------------*/
+
+.container-actions {
+	text-align: right;
+}
+
+.container-actions h2 {
+	display: inline-block;
+}
+
+.container-actions .profilemeter .welcomeprofile {
+	height: 30px;
+}
+
+.container-actions .profilemeter #profilepercent {
+	padding-top: 9px;
+	padding-bottom: 9px;
+}
+
+/* ----------------------------------------------
+	Container: Title
+-------------------------------------------------*/
+
+.container-title {
+	
+}
+
+.container-title p {
+	font-size: 11px;
+	margin-top: 17px;
+}
+
+.container-title p.opportunity-count {
+	font-size: 12px;
+	margin-top: 5px;
+}
+
+/* ----------------------------------------------
+	Container: Related Content
+-------------------------------------------------*/
+
+.container-related-content {
+	border-left: 1px solid #807f84;
+	padding: 0 0 15px 15px;
+}
+
+.container-related-content h5 {
+	padding-left: 40px;
+}
+
+.container-related-content .item {
+	background: transparent url(../images/programcard-icon.png) no-repeat 0 0;
+	margin: 0 0 15px 0;
+	padding-left: 40px;
+}
+
+.container-related-content .item p {
+	margin: 0;
+}
+
+/* ----------------------------------------------
+	History Grid
+-------------------------------------------------*/
+
+.history-grid {
+	margin: 55px 0 0 0;
+	border-bottom: 1px solid #000000;
+}
+
+.history-grid .item {
+	border: 1px solid #000000;
+	border-bottom: 0;
+}
+
+.history-grid .item p {
+	font-size: 11px;
+}
+
+.history-grid .item .status, 
+.history-grid .item .title-description, 
+.history-grid .item .actions {
+	float: left;
+	height: 118px;
+}
+
+.history-grid .item .status {
+	background-color: #f1f1f1;
+	border-right: 1px solid #000000;
+	padding: 20px;
+	position: relative;
+	width: 169px;
+}
+
+.history-grid .item .status p {
+	background: transparent no-repeat 50% 0;
+	padding: 50px 0 0 0;
+	text-align: center;
+}
+
+.history-grid .item .status p.completed {
+	background-image: url(../images/icon-card-title.png);
+}
+
+.history-grid .item .status .arrow {
+	left: 168px;
+	position: absolute;
+	top: 52px;
+}
+
+.history-grid .item .status .arrow.back {
+	border-top: 9px solid transparent;
+	border-bottom: 9px solid transparent;
+	border-left: 9px solid #000000;
+	height: 0;
+	width: 0;
+}
+
+.history-grid .item .status .arrow.front {
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	border-left: 8px solid #f1f1f1;
+	height: 0;
+	top: 53px;
+	width: 0;
+}
+
+.history-grid .item .title-description {
+	padding: 14px 25px;
+	width: 620px;
+}
+
+.history-grid .item .title-description h2 {
+	font-size: 20px;
+	margin: 0 0 13px 0;
+}
+
+.history-grid .item .actions {
+	padding: 20px;
+	width: 149px;
+}
+
+.history-grid .item .actions p a {
+	background: transparent no-repeat 0 50%;
+	color: #000000;
+	display: block;
+	min-height: 30px;
+	padding: 5px 0 0 40px;
+}
+
+.history-grid .item .actions .ratings a {
+	background-image: url(../images/icon-ratings.png);
+}
+
+.history-grid .item .actions .discussions a {
+	background-image: url(../images/icon-discussions.png);
+}
+
+/* ----------------------------------------------
+	Program Modal
+-------------------------------------------------*/
+
+.program-modal {
+	background-color: #f1f1f1;
+	margin-left: -450px;
+	width: 900px;
+}
+
+.program-modal h2 {
+	color: #009DD9;
+	font-size: 24px;
+}
+
+.program-modal p, 
+.program-modal li {
+	font-size: 11px;
+}
+
+.program-modal span.label {
+	color: #00b4ee;
+	font-weight: bold;
+}
+
+.program-modal .container-prog-details {
+	margin-top: 50px;
+}
+
+.program-modal .row {
+	padding: 0;
+}
+
+/* ----------------------------------------------
+	Search Results Modal
+-------------------------------------------------*/
+
+.search-results-modal {
+	background-color: #f1f1f1;
+	margin-left: -356px;
+	padding: 0;
+	width: 712px;
+}
+
+.search-results-modal .container-results-header {
+	background-color: #504e4f;
+	height: 45px;
+	position: relative;
+}
+
+.search-results-modal .container-results-header .arrow {
+	border-style: solid;
+	border-width: 9px 9px 0 9px;
+	border-color: #504e4f transparent transparent transparent;
+	height: 0px;
+	left: 346px;
+	position: absolute;
+	top: 45px;
+	width: 0px;
+}
+
+.search-results-modal .container-results-header .results-count {
+	color: #e7e7e9;
+	float: left;
+	font-size: 12px;
+	margin: 13px 10px 0;
+	text-transform: uppercase;
+}
+
+.search-results-modal .container-results-header .results-count span {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.search-results-modal .container-results-header .results-filter {
+	color: #e7e7e9;
+	float: left;
+	font-size: 11px;
+	margin: 17px 0 0 15px;
+	text-transform: uppercase;
+}
+
+.search-results-modal .container-results-header .results-filter a {
+	color: #e7e7e9;
+	text-decoration: underline;
+}
+
+.search-results-modal .container-results-header .searchcontainer {
+	float: right;
+	height: auto;
+	margin-top: 13px;
+}
+
+.search-results-modal .container-results-header .searchcontainer input {
+	background: #000000 url(../images/search.png) no-repeat right center;
+	color: #f1f1f1;
+	display: inline;
+	font-size: 12px;
+	height: 18px;
+	margin: 0px;
+	padding: 0px 2px;
+	text-transform: uppercase;
+	width: 160px;
+}
+
+.search-results-modal .container-results {
+	
+}
+
+.search-results-modal .container-results .item {
+	border-bottom: 1px solid #807f84;
+	padding: 15px 0;
+}
+
+.search-results-modal .container-results .item .detail-icon {
+	float: left;
+	padding: 6px 8px;
+}
+
+.search-results-modal .container-results .item .details {
+	float: left;
+	padding: 0 20px 0 2px;
+	width: 420px;
+}
+
+.search-results-modal .container-results .item .details h3 {
+	margin-top: 0;
+}
+
+.search-results-modal .container-results .item .details p {
+	font-size: 11px;
+	margin-bottom: 0;
+}
+
+.search-results-modal .container-results .item .status {
+	float: left;
+	width: 110px;
+}
+
+.search-results-modal .container-results .item .status p {
+	margin: 15px 0 0 15px;
+}
+
+.search-results-modal .container-results .item .actions {
+	float: right;
+	width: 110px;
+}
+
+.search-results-modal .container-results .item .actions .icon-link {
+	margin-top: 9px;
+}
+
+.search-results-modal .container-results .item .actions .icon-link:first-child {
+	margin-top: 0;
+}
+
+.search-results-modal .container-results-footer {
+	height: 30px;
+	padding: 5px 10px;
+}
+
+.search-results-modal .container-results-footer ul {
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.search-results-modal .container-results-footer ul li {
+	display: inline-block;
+	list-style-type: none;
+	margin: 0 5px;
+}
+
+.search-results-modal .container-results-footer ul li a {
+	font-weight: bold;
+}
+
+.search-results-modal .container-results-footer ul li a.active {
+	color: #000000;
+	cursor: default;
+}
+
+.search-results-modal .container-results-footer a.arrow {
+	border-style: solid;
+	float: left;
+	height: 0px;
+	width: 0px;
+}
+
+.search-results-modal .container-results-footer a.arrow.next {
+	border-color: transparent transparent transparent #000000;
+	border-width: 11px 0 11px 11px;
+	margin: 0 0 0 5px;
+}
+
+.search-results-modal .container-results-footer a.arrow.next.inactive {
+	border-color: transparent transparent transparent #a2a2a2;
+	cursor: default;
+}
+
+.search-results-modal .container-results-footer a.arrow.prev {
+	border-color: transparent #000000 transparent transparent;
+	border-width: 11px 11px 11px 0;
+	margin: 0 5px 0 0;
+}
+
+.search-results-modal .container-results-footer a.arrow.prev.inactive {
+	border-color: transparent #a2a2a2 transparent transparent;
+	cursor: default;
+}
+
+.reveal-modal.search-results-modal .close-reveal-modal:not(.button) {
+	color: #ffffff;
+	top: 12px;
+}
+
+/* ----------------------------------------------
+	Component: Ratings
+-------------------------------------------------*/
+
+.rating-component {
+	position: relative;
+}
+
+.rating-component .link {
+	float: left;
+	font-size: 12px;
+}
+
+.rating-component .star {
+	float: left;
+	height: 15px;
+	width: 22px;
+}
+
+.rating-component .star.selected {
+	background: transparent url(../images/icon-rating-star-selected.png) no-repeat 0 0;
+}
+
+.rating-component .star.unselected {
+	background: transparent url(../images/icon-rating-star-unselected.png) no-repeat 0 0;
+}
+
+/* ----------------------------------------------
+	Component: Tool Tip
+-------------------------------------------------*/
+
+.tool-tip {
+
+}
+
+.tool-tip .trigger {
+	float: left;
+	font-size: 12px;
+	position: relative;
+}
+
+.tool-tip .trigger .tip-arrows {
+	border-style: solid;
+	border-width: 0 9px 9px 9px;
+	border-color: transparent transparent #907f85 transparent;
+	display: none;
+	height: 0px;
+	margin-left: 30px;
+	position: absolute;
+	top: 12px;
+	width: 0px;
+}
+
+.tool-tip .trigger .tip-arrow-front {
+	border-style: solid;
+	border-width: 0 9px 9px 9px;
+	border-color: transparent transparent #ffffff transparent;
+	height: 0px;
+	margin-left: -9px;
+	position: absolute;
+	top: 1px;
+	width: 0px;
+}
+
+.tool-tip .trigger .tip {
+	background-color: #ffffff;
+	border: 1px solid #907f85;
+	display: none;
+	margin-left: -80px;
+	padding: 15px 15px 0;
+	position: absolute;
+	top: 20px;
+	width: 250px;
+}
+
+.tool-tip .trigger:hover .tip, 
+.tool-tip .trigger:hover .tip-arrows {
+	display: block;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width" />
+
+	<title>Nielsen Portal Master Page</title>
+
+	<!-- Included CSS Files (Uncompressed) -->
+	<!--
+	<link rel="stylesheet" href="stylesheets/foundation.css">
+	-->
+
+	<!-- Included CSS Files (Compressed) -->
+	<link rel="stylesheet" href="stylesheets/foundation.min.css">
+
+	<!-- FONTS + APP CSS -->
+	<link href="stylesheets/ui-lightness/jquery-ui-1.10.3.custom.css" rel="stylesheet">
+	<!-- <link rel="stylesheet" type="text/css" href="stylesheets/MyFontsWebfontsKit.css"> -->
+	<link rel="stylesheet" href="stylesheets/elsmaster.css">
+
+	<!-- App CSS -->
+	<link rel="stylesheet" href="stylesheets/app.css">
+
+	<script src="javascripts/modernizr.foundation.js"></script>
+</head>
+<body>
+
+	<!-- Included JS Files (Compressed) -->
+	<script src="javascripts/foundation.min.js"></script>
+	<script src="javascripts/jquery-1.9.1.js"></script>
+	<script src="javascripts/jquery-ui-1.10.3.custom.js"></script>
+
+	<!-- Initialize JS Plugins -->
+	<script src="javascripts/app.js"></script>
+	<script src="javascripts/iqapi.js"></script>
+
+    <script>
+    $(window).load(function(){
+      $('#cardscontainer').hide();
+      $('#cardscontainer').html(getSampleCards('templatecard'));
+      $('#cardscontainer').fadeIn(500);
+    });
+
+
+    function getSampleCards(templatediv){
+      var template = $('#'+templatediv).html();
+      var ret_str = '';
+      for (var i=0;i<8;i++){
+        ret_str += template;
+      }
+      return ret_str;
+    }
+    </script>
+
+	<script type="text/javascript">
+		IQ_GetContentForMolecule('video');
+	</script>
+  
+</body>
+</html>
